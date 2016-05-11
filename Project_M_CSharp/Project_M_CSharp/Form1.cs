@@ -16,20 +16,11 @@ namespace Project_M_CSharp
         public frm_Spielfeld()
         {
             InitializeComponent();
-            //foreach (Button b in frm_Spielfeld)
-            //{
-
-            //}
             Container buttonContainer = new Container();
-            //buttonContainer.Add(btn_0_ziel);
             foreach(Button b in pnl_alleFelder.Controls)
             {
                 buttonContainer.Add(b);
             }
-
-            btn_17_1.Tag = 8;
-            int schniedel = (int)btn_17_1.Tag;
-            Console.WriteLine(schniedel);
         }
 
         private void btn_wuerfeln_Click(object sender, EventArgs e)
@@ -39,12 +30,12 @@ namespace Project_M_CSharp
             lbl_wurfzahl.Text = Wurfzahl.ToString();
         }
 
-        private void btn_40_red_1_Click(object sender, EventArgs e)
-        {
-            int GewuerfelteZahl = Wurfzahl;
-            rueckOptionenPropagiere(btn_40_red_1);
+        //private void btn_40_red_1_Click(object sender, EventArgs e)
+        //{
+        //    int GewuerfelteZahl = Wurfzahl;
+        //    rueckOptionenPropagiere(btn_40_red_1);
 
-        }
+        //}
 
         private void rueckOptionenPropagiere(Button b)
         {
@@ -58,13 +49,78 @@ namespace Project_M_CSharp
             }
         }
 
-        private void btn_9_1_Click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
-            btn_9_1.BackColor = Color.Brown;
-            foreach(Button b in btn_9_1.nachbarn)
+            Feld myfield = (Feld)sender;
+            Console.WriteLine("ich bin " + sender);
+           
+            foreach(Button b in myfield.nachbarn)
             {
-                b.BackColor = Color.Brown;
+                if(b.BackColor == Color.Brown)
+                {
+                    b.BackColor = Color.Black;
+                    myfield.BackColor = Color.Black;
+                }
+                else
+                {
+                    b.BackColor = Color.Brown;
+                    myfield.BackColor = Color.Brown;
+                }
             }
         }
+
+        //private void btn_24_1_Click(object sender, EventArgs e)
+        //{
+        //    btn_24_1.BackColor = Color.Brown;
+        //    foreach (Button b in btn_24_1.nachbarn)
+        //    {
+        //        b.BackColor = Color.Brown;
+        //    }
+        //}
+
+        //private void btn_0_ziel_Click(object sender, EventArgs e)
+        //{
+        //    btn_0_ziel.BackColor = Color.Brown;
+        //    foreach (Button b in btn_0_ziel.nachbarn)
+        //    {
+        //        b.BackColor = Color.Brown;
+        //    }
+        //}
+
+        //private void btn_1_Click(object sender, EventArgs e)
+        //{
+        //    btn_1.BackColor = Color.Brown;
+        //    foreach (Button b in btn_1.nachbarn)
+        //    {
+        //        b.BackColor = Color.Brown;
+        //    }
+        //}
+
+        //private void btn_2_1_Click(object sender, EventArgs e)
+        //{
+        //    btn_2_1.BackColor = Color.Brown;
+        //    foreach (Button b in btn_2_1.nachbarn)
+        //    {
+        //        b.BackColor = Color.Brown;
+        //    }
+        //}
+
+        //private void btn_2_2_Click(object sender, EventArgs e)
+        //{
+        //    btn_2_2.BackColor = Color.Brown;
+        //    foreach (Button b in btn_2_2.nachbarn)
+        //    {
+        //        b.BackColor = Color.Brown;
+        //    }
+        //}
+
+        //private void btn_3_1_Click(object sender, EventArgs e)
+        //{
+        //    btn_3_1.BackColor = Color.Brown;
+        //    foreach (Button b in btn_3_1.nachbarn)
+        //    {
+        //        b.BackColor = Color.Brown;
+        //    }
+        //}
     }
 }

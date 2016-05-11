@@ -9,10 +9,14 @@ namespace Project_M_CSharp
 {
     class Feld : Button
     {
-        public Button[] nachbarn;
+        public Button[] nachbarn; //ist das cool weil Feld
 
         //Button b = new Button();
-        public Feld(params Button[] ButtonList) : base()
+        public Feld() : base()
+        {
+        }
+
+        public void setNachbar (params Button[] ButtonList)
         {
             nachbarn = ButtonList;
         }
