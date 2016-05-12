@@ -31,138 +31,138 @@ namespace Project_M_CSharp
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_8_1 = new Feld();
-            this.btn_9_1 = new Feld();
-            this.btn_10_1 = new Feld();
-            this.btn_1 = new Feld();
-            this.btn_2_1 = new Feld();
-            this.btn_3_1 = new Feld();
-            this.btn_4_1 = new Feld();
-            this.btn_5_1 = new Feld();
-            this.btn_6_1 = new Feld();
-            this.btn_7_1 = new Feld();
-            this.btn_17_1 = new Feld();
-            this.btn_16_1 = new Feld();
-            this.btn_15_1 = new Feld();
-            this.btn_14_1 = new Feld();
-            this.btn_13_1 = new Feld();
-            this.btn_12_1 = new Feld();
-            this.btn_11_1 = new Feld();
-            this.btn_8_2 = new Feld();
-            this.btn_7_2 = new Feld();
-            this.btn_6_2 = new Feld();
-            this.btn_5_2 = new Feld();
-            this.btn_4_2 = new Feld();
-            this.btn_3_2 = new Feld();
-            this.btn_2_2 = new Feld();
-            this.btn_19_1 = new Feld();
-            this.btn_18_1 = new Feld();
-            this.btn_15_2 = new Feld();
-            this.btn_14_2 = new Feld();
-            this.btn_13_2 = new Feld();
-            this.btn_12_2 = new Feld();
-            this.btn_11_2 = new Feld();
-            this.btn_10_2 = new Feld();
-            this.btn_9_2 = new Feld();
-            this.btn_22_2 = new Feld();
-            this.btn_23_1 = new Feld();
-            this.btn_22_1 = new Feld();
-            this.btn_21_1 = new Feld();
-            this.btn_20_1 = new Feld();
-            this.btn_18_2 = new Feld();
-            this.btn_17_2 = new Feld();
-            this.btn_16_2 = new Feld();
-            this.btn_26_3 = new Feld();
-            this.btn_27_2 = new Feld();
-            this.btn_26_2 = new Feld();
-            this.btn_25_1 = new Feld();
-            this.btn_24_1 = new Feld();
-            this.btn_24_2 = new Feld();
-            this.btn_23_2 = new Feld();
-            this.btn_28_1 = new Feld();
-            this.btn_27_1 = new Feld();
-            this.btn_26_1 = new Feld();
-            this.btn_25_2 = new Feld();
-            this.btn_31_2 = new Feld();
-            this.btn_32_3 = new Feld();
-            this.btn_33_3 = new Feld();
-            this.btn_32_4 = new Feld();
-            this.btn_31_3 = new Feld();
-            this.btn_30_3 = new Feld();
-            this.btn_29_2 = new Feld();
-            this.btn_28_2 = new Feld();
-            this.btn_27_3 = new Feld();
-            this.btn_26_4 = new Feld();
-            this.btn_29_1 = new Feld();
-            this.btn_30_2 = new Feld();
-            this.btn_34_3 = new Feld();
-            this.btn_35_2 = new Feld();
-            this.btn_34_2 = new Feld();
-            this.btn_35_1 = new Feld();
-            this.btn_34_1 = new Feld();
-            this.btn_33_1 = new Feld();
-            this.btn_32_1 = new Feld();
-            this.btn_35_5 = new Feld();
-            this.btn_34_8 = new Feld();
-            this.btn_33_5 = new Feld();
-            this.btn_32_6 = new Feld();
-            this.btn_31_4 = new Feld();
-            this.btn_30_4 = new Feld();
-            this.btn_31_1 = new Feld();
-            this.btn_30_1 = new Feld();
-            this.btn_38_6 = new Feld();
-            this.btn_38_7 = new Feld();
-            this.btn_39_4 = new Feld();
-            this.btn_38_8 = new Feld();
-            this.btn_37_5 = new Feld();
-            this.btn_36_5 = new Feld();
-            this.btn_34_7 = new Feld();
-            this.btn_35_4 = new Feld();
-            this.btn_34_6 = new Feld();
-            this.btn_32_5 = new Feld();
-            this.btn_33_4 = new Feld();
-            this.btn_34_5 = new Feld();
-            this.btn_35_3 = new Feld();
-            this.btn_34_4 = new Feld();
-            this.btn_32_2 = new Feld();
-            this.btn_33_2 = new Feld();
-            this.btn_38_4 = new Feld();
-            this.btn_37_3 = new Feld();
-            this.btn_38_5 = new Feld();
-            this.btn_39_3 = new Feld();
-            this.btn_37_4 = new Feld();
-            this.btn_37_1 = new Feld();
-            this.btn_38_1 = new Feld();
-            this.btn_39_1 = new Feld();
-            this.btn_38_2 = new Feld();
-            this.btn_37_2 = new Feld();
-            this.btn_38_3 = new Feld();
-            this.btn_39_2 = new Feld();
-            this.btn_36_1 = new Feld();
-            this.btn_36_4 = new Feld();
-            this.btn_36_3 = new Feld();
-            this.btn_36_2 = new Feld();
-            this.btn_40_red_4 = new Feld();
-            this.btn_40_red_3 = new Feld();
-            this.btn_40_red_5 = new Feld();
-            this.btn_40_red_2 = new Feld();
-            this.btn_40_red_1 = new Feld();
-            this.btn_40_green_4 = new Feld();
-            this.btn_40_green_3 = new Feld();
-            this.btn_40_green_5 = new Feld();
-            this.btn_40_green_2 = new Feld();
-            this.btn_40_green_1 = new Feld();
-            this.btn_40_yellow_4 = new Feld();
-            this.btn_40_yellow_3 = new Feld();
-            this.btn_40_yellow_5 = new Feld();
-            this.btn_40_yellow_2 = new Feld();
-            this.btn_40_yellow_1 = new Feld();
-            this.btn_40_blue_4 = new Feld();
-            this.btn_40_blue_3 = new Feld();
-            this.btn_40_blue_5 = new Feld();
-            this.btn_40_blue_2 = new Feld();
-            this.btn_40_blue_1 = new Feld();
-            this.btn_0_ziel = new Feld();
+            this.btn_8_1 = new Feld(Feld.Content.EMPTY, 8);
+            this.btn_9_1 = new Feld(Feld.Content.EMPTY, 9);
+            this.btn_10_1 = new Feld(Feld.Content.EMPTY,10);
+            this.btn_1 = new Feld(Feld.Content.BLOCK, 1);
+            this.btn_2_1 = new Feld(Feld.Content.EMPTY, 2);
+            this.btn_3_1 = new Feld(Feld.Content.EMPTY, 3);
+            this.btn_4_1 = new Feld(Feld.Content.EMPTY, 4);
+            this.btn_5_1 = new Feld(Feld.Content.EMPTY, 5);
+            this.btn_6_1 = new Feld(Feld.Content.EMPTY, 6);
+            this.btn_7_1 = new Feld(Feld.Content.EMPTY, 7);
+            this.btn_17_1 = new Feld(Feld.Content.EMPTY, 17);
+            this.btn_16_1 = new Feld(Feld.Content.EMPTY, 16);
+            this.btn_15_1 = new Feld(Feld.Content.EMPTY, 15);
+            this.btn_14_1 = new Feld(Feld.Content.EMPTY, 14);
+            this.btn_13_1 = new Feld(Feld.Content.EMPTY, 13);
+            this.btn_12_1 = new Feld(Feld.Content.EMPTY, 12);
+            this.btn_11_1 = new Feld(Feld.Content.EMPTY, 11);
+            this.btn_8_2 = new Feld(Feld.Content.EMPTY, 8);
+            this.btn_7_2 = new Feld(Feld.Content.EMPTY, 7);
+            this.btn_6_2 = new Feld(Feld.Content.EMPTY, 6);
+            this.btn_5_2 = new Feld(Feld.Content.EMPTY, 5);
+            this.btn_4_2 = new Feld(Feld.Content.EMPTY, 4);
+            this.btn_3_2 = new Feld(Feld.Content.EMPTY, 3);
+            this.btn_2_2 = new Feld(Feld.Content.EMPTY, 2);
+            this.btn_19_1 = new Feld(Feld.Content.BLOCK, 19);
+            this.btn_18_1 = new Feld(Feld.Content.EMPTY, 18);
+            this.btn_15_2 = new Feld(Feld.Content.EMPTY, 15);
+            this.btn_14_2 = new Feld(Feld.Content.EMPTY, 14);
+            this.btn_13_2 = new Feld(Feld.Content.EMPTY, 13);
+            this.btn_12_2 = new Feld(Feld.Content.EMPTY, 12);
+            this.btn_11_2 = new Feld(Feld.Content.EMPTY, 11);
+            this.btn_10_2 = new Feld(Feld.Content.EMPTY, 10);
+            this.btn_9_2 = new Feld(Feld.Content.EMPTY, 9);
+            this.btn_22_2 = new Feld(Feld.Content.EMPTY, 22);
+            this.btn_23_1 = new Feld(Feld.Content.EMPTY, 23);
+            this.btn_22_1 = new Feld(Feld.Content.EMPTY, 22);
+            this.btn_21_1 = new Feld(Feld.Content.BLOCK, 21);
+            this.btn_20_1 = new Feld(Feld.Content.BLOCK, 20);
+            this.btn_18_2 = new Feld(Feld.Content.EMPTY, 18);
+            this.btn_17_2 = new Feld(Feld.Content.EMPTY, 17);
+            this.btn_16_2 = new Feld(Feld.Content.EMPTY, 16);
+            this.btn_26_3 = new Feld(Feld.Content.EMPTY, 26);
+            this.btn_27_2 = new Feld(Feld.Content.EMPTY, 27);
+            this.btn_26_2 = new Feld(Feld.Content.EMPTY, 26);
+            this.btn_25_1 = new Feld(Feld.Content.BLOCK, 25);
+            this.btn_24_1 = new Feld(Feld.Content.EMPTY, 24);
+            this.btn_24_2 = new Feld(Feld.Content.EMPTY, 24);
+            this.btn_23_2 = new Feld(Feld.Content.EMPTY, 23);
+            this.btn_28_1 = new Feld(Feld.Content.EMPTY, 28);
+            this.btn_27_1 = new Feld(Feld.Content.EMPTY, 27);
+            this.btn_26_1 = new Feld(Feld.Content.EMPTY, 26);
+            this.btn_25_2 = new Feld(Feld.Content.BLOCK, 25);
+            this.btn_31_2 = new Feld(Feld.Content.EMPTY, 31);
+            this.btn_32_3 = new Feld(Feld.Content.EMPTY, 32);
+            this.btn_33_3 = new Feld(Feld.Content.EMPTY, 33);
+            this.btn_32_4 = new Feld(Feld.Content.EMPTY, 32);
+            this.btn_31_3 = new Feld(Feld.Content.EMPTY, 31);
+            this.btn_30_3 = new Feld(Feld.Content.EMPTY, 30);
+            this.btn_29_2 = new Feld(Feld.Content.EMPTY, 29);
+            this.btn_28_2 = new Feld(Feld.Content.EMPTY, 28);
+            this.btn_27_3 = new Feld(Feld.Content.EMPTY, 27);
+            this.btn_26_4 = new Feld(Feld.Content.EMPTY, 26);
+            this.btn_29_1 = new Feld(Feld.Content.EMPTY, 29);
+            this.btn_30_2 = new Feld(Feld.Content.EMPTY, 30);
+            this.btn_34_3 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_35_2 = new Feld(Feld.Content.BLOCK, 35);
+            this.btn_34_2 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_35_1 = new Feld(Feld.Content.BLOCK, 35);
+            this.btn_34_1 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_33_1 = new Feld(Feld.Content.EMPTY, 33);
+            this.btn_32_1 = new Feld(Feld.Content.EMPTY, 32);
+            this.btn_35_5 = new Feld(Feld.Content.BLOCK, 35);
+            this.btn_34_8 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_33_5 = new Feld(Feld.Content.EMPTY, 33);
+            this.btn_32_6 = new Feld(Feld.Content.EMPTY, 32);
+            this.btn_31_4 = new Feld(Feld.Content.EMPTY, 31);
+            this.btn_30_4 = new Feld(Feld.Content.EMPTY, 30);
+            this.btn_31_1 = new Feld(Feld.Content.EMPTY, 31);
+            this.btn_30_1 = new Feld(Feld.Content.EMPTY, 30);
+            this.btn_38_6 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_38_7 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_39_4 = new Feld(Feld.Content.EMPTY, 39);
+            this.btn_38_8 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_37_5 = new Feld(Feld.Content.EMPTY, 37);
+            this.btn_36_5 = new Feld(Feld.Content.EMPTY, 36);
+            this.btn_34_7 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_35_4 = new Feld(Feld.Content.BLOCK, 35);
+            this.btn_34_6 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_32_5 = new Feld(Feld.Content.EMPTY, 32);
+            this.btn_33_4 = new Feld(Feld.Content.EMPTY, 33);
+            this.btn_34_5 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_35_3 = new Feld(Feld.Content.BLOCK, 35);
+            this.btn_34_4 = new Feld(Feld.Content.EMPTY, 34);
+            this.btn_32_2 = new Feld(Feld.Content.EMPTY, 32);
+            this.btn_33_2 = new Feld(Feld.Content.EMPTY, 33);
+            this.btn_38_4 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_37_3 = new Feld(Feld.Content.EMPTY, 37);
+            this.btn_38_5 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_39_3 = new Feld(Feld.Content.EMPTY, 39);
+            this.btn_37_4 = new Feld(Feld.Content.EMPTY, 37);
+            this.btn_37_1 = new Feld(Feld.Content.EMPTY, 37);
+            this.btn_38_1 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_39_1 = new Feld(Feld.Content.EMPTY, 39);
+            this.btn_38_2 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_37_2 = new Feld(Feld.Content.EMPTY, 37);
+            this.btn_38_3 = new Feld(Feld.Content.EMPTY, 38);
+            this.btn_39_2 = new Feld(Feld.Content.EMPTY, 39);
+            this.btn_36_1 = new Feld(Feld.Content.EMPTY, 36);
+            this.btn_36_4 = new Feld(Feld.Content.EMPTY, 36);
+            this.btn_36_3 = new Feld(Feld.Content.EMPTY, 36);
+            this.btn_36_2 = new Feld(Feld.Content.EMPTY, 36);
+            this.btn_40_red_4 = new Feld(Feld.Content.RED, 40);
+            this.btn_40_red_3 = new Feld(Feld.Content.RED, 40);
+            this.btn_40_red_5 = new Feld(Feld.Content.RED, 40);
+            this.btn_40_red_2 = new Feld(Feld.Content.RED, 40);
+            this.btn_40_red_1 = new Feld(Feld.Content.RED, 40);
+            this.btn_40_green_4 = new Feld(Feld.Content.GREEN, 40);
+            this.btn_40_green_3 = new Feld(Feld.Content.GREEN, 40);
+            this.btn_40_green_5 = new Feld(Feld.Content.GREEN, 40);
+            this.btn_40_green_2 = new Feld(Feld.Content.GREEN, 40);
+            this.btn_40_green_1 = new Feld(Feld.Content.GREEN, 40);
+            this.btn_40_yellow_4 = new Feld(Feld.Content.YELLOW, 40);
+            this.btn_40_yellow_3 = new Feld(Feld.Content.YELLOW, 40);
+            this.btn_40_yellow_5 = new Feld(Feld.Content.YELLOW, 40);
+            this.btn_40_yellow_2 = new Feld(Feld.Content.YELLOW, 40);
+            this.btn_40_yellow_1 = new Feld(Feld.Content.YELLOW, 40);
+            this.btn_40_blue_4 = new Feld(Feld.Content.BLUE, 40);
+            this.btn_40_blue_3 = new Feld(Feld.Content.BLUE, 40);
+            this.btn_40_blue_5 = new Feld(Feld.Content.BLUE, 40);
+            this.btn_40_blue_2 = new Feld(Feld.Content.BLUE, 40);
+            this.btn_40_blue_1 = new Feld(Feld.Content.BLUE, 40);
+            this.btn_0_ziel = new Feld(Feld.Content.GOAL, 0);
 
             //weise Nachbarn zu
             btn_0_ziel.setNachbar(btn_1);
@@ -307,7 +307,7 @@ namespace Project_M_CSharp
             // 
             // btn_8_1
             // 
-            this.btn_8_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_8_1.BackColor = System.Drawing.Color.Black;
             this.btn_8_1.Location = new System.Drawing.Point(116, 52);
             this.btn_8_1.Name = "btn_8_1";
             this.btn_8_1.Size = new System.Drawing.Size(75, 43);
@@ -318,7 +318,7 @@ namespace Project_M_CSharp
             // 
             // btn_10_1
             // 
-            this.btn_10_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_10_1.BackColor = System.Drawing.Color.Black;
             this.btn_10_1.Location = new System.Drawing.Point(35, 101);
             this.btn_10_1.Name = "btn_10_1";
             this.btn_10_1.Size = new System.Drawing.Size(75, 43);
@@ -329,7 +329,7 @@ namespace Project_M_CSharp
             // 
             // btn_9_1
             // 
-            this.btn_9_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_9_1.BackColor = System.Drawing.Color.Black;
             this.btn_9_1.Location = new System.Drawing.Point(35, 52);
             this.btn_9_1.Name = "btn_9_1";
             this.btn_9_1.Size = new System.Drawing.Size(75, 43);
@@ -351,7 +351,7 @@ namespace Project_M_CSharp
             // 
             // btn_2_1
             // 
-            this.btn_2_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_2_1.BackColor = System.Drawing.Color.Black;
             this.btn_2_1.Location = new System.Drawing.Point(602, 52);
             this.btn_2_1.Name = "btn_2_1";
             this.btn_2_1.Size = new System.Drawing.Size(75, 43);
@@ -362,7 +362,7 @@ namespace Project_M_CSharp
             // 
             // btn_3_1
             // 
-            this.btn_3_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_3_1.BackColor = System.Drawing.Color.Black;
             this.btn_3_1.Location = new System.Drawing.Point(521, 52);
             this.btn_3_1.Name = "btn_3_1";
             this.btn_3_1.Size = new System.Drawing.Size(75, 43);
@@ -373,7 +373,7 @@ namespace Project_M_CSharp
             // 
             // btn_4_1
             // 
-            this.btn_4_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_4_1.BackColor = System.Drawing.Color.Black;
             this.btn_4_1.Location = new System.Drawing.Point(440, 52);
             this.btn_4_1.Name = "btn_4_1";
             this.btn_4_1.Size = new System.Drawing.Size(75, 43);
@@ -384,7 +384,7 @@ namespace Project_M_CSharp
             // 
             // btn_5_1
             // 
-            this.btn_5_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_5_1.BackColor = System.Drawing.Color.Black;
             this.btn_5_1.Location = new System.Drawing.Point(359, 52);
             this.btn_5_1.Name = "btn_5_1";
             this.btn_5_1.Size = new System.Drawing.Size(75, 43);
@@ -395,7 +395,7 @@ namespace Project_M_CSharp
             // 
             // btn_6_1
             // 
-            this.btn_6_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_6_1.BackColor = System.Drawing.Color.Black;
             this.btn_6_1.Location = new System.Drawing.Point(278, 52);
             this.btn_6_1.Name = "btn_6_1";
             this.btn_6_1.Size = new System.Drawing.Size(75, 43);
@@ -406,7 +406,7 @@ namespace Project_M_CSharp
             // 
             // btn_7_1
             // 
-            this.btn_7_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_7_1.BackColor = System.Drawing.Color.Black;
             this.btn_7_1.Location = new System.Drawing.Point(197, 52);
             this.btn_7_1.Name = "btn_7_1";
             this.btn_7_1.Size = new System.Drawing.Size(75, 43);
@@ -417,7 +417,7 @@ namespace Project_M_CSharp
             // 
             // btn_17_1
             // 
-            this.btn_17_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_17_1.BackColor = System.Drawing.Color.Black;
             this.btn_17_1.Location = new System.Drawing.Point(521, 150);
             this.btn_17_1.Name = "btn_17_1";
             this.btn_17_1.Size = new System.Drawing.Size(75, 43);
@@ -428,7 +428,7 @@ namespace Project_M_CSharp
             // 
             // btn_16_1
             // 
-            this.btn_16_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_16_1.BackColor = System.Drawing.Color.Black;
             this.btn_16_1.Location = new System.Drawing.Point(440, 150);
             this.btn_16_1.Name = "btn_16_1";
             this.btn_16_1.Size = new System.Drawing.Size(75, 43);
@@ -439,7 +439,7 @@ namespace Project_M_CSharp
             // 
             // btn_15_1
             // 
-            this.btn_15_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_15_1.BackColor = System.Drawing.Color.Black;
             this.btn_15_1.Location = new System.Drawing.Point(359, 150);
             this.btn_15_1.Name = "btn_15_1";
             this.btn_15_1.Size = new System.Drawing.Size(75, 43);
@@ -450,7 +450,7 @@ namespace Project_M_CSharp
             // 
             // btn_14_1
             // 
-            this.btn_14_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_14_1.BackColor = System.Drawing.Color.Black;
             this.btn_14_1.Location = new System.Drawing.Point(278, 150);
             this.btn_14_1.Name = "btn_14_1";
             this.btn_14_1.Size = new System.Drawing.Size(75, 43);
@@ -461,7 +461,7 @@ namespace Project_M_CSharp
             // 
             // btn_13_1
             // 
-            this.btn_13_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_13_1.BackColor = System.Drawing.Color.Black;
             this.btn_13_1.Location = new System.Drawing.Point(197, 150);
             this.btn_13_1.Name = "btn_13_1";
             this.btn_13_1.Size = new System.Drawing.Size(75, 43);
@@ -472,7 +472,7 @@ namespace Project_M_CSharp
             // 
             // btn_12_1
             // 
-            this.btn_12_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_12_1.BackColor = System.Drawing.Color.Black;
             this.btn_12_1.Location = new System.Drawing.Point(116, 150);
             this.btn_12_1.Name = "btn_12_1";
             this.btn_12_1.Size = new System.Drawing.Size(75, 43);
@@ -483,7 +483,7 @@ namespace Project_M_CSharp
             // 
             // btn_11_1
             // 
-            this.btn_11_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_11_1.BackColor = System.Drawing.Color.Black;
             this.btn_11_1.Location = new System.Drawing.Point(35, 150);
             this.btn_11_1.Name = "btn_11_1";
             this.btn_11_1.Size = new System.Drawing.Size(75, 43);
@@ -494,7 +494,7 @@ namespace Project_M_CSharp
             // 
             // btn_8_2
             // 
-            this.btn_8_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_8_2.BackColor = System.Drawing.Color.Black;
             this.btn_8_2.Location = new System.Drawing.Point(1251, 52);
             this.btn_8_2.Name = "btn_8_2";
             this.btn_8_2.Size = new System.Drawing.Size(75, 43);
@@ -505,7 +505,7 @@ namespace Project_M_CSharp
             // 
             // btn_7_2
             // 
-            this.btn_7_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_7_2.BackColor = System.Drawing.Color.Black;
             this.btn_7_2.Location = new System.Drawing.Point(1170, 52);
             this.btn_7_2.Name = "btn_7_2";
             this.btn_7_2.Size = new System.Drawing.Size(75, 43);
@@ -516,7 +516,7 @@ namespace Project_M_CSharp
             // 
             // btn_6_2
             // 
-            this.btn_6_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_6_2.BackColor = System.Drawing.Color.Black;
             this.btn_6_2.Location = new System.Drawing.Point(1089, 52);
             this.btn_6_2.Name = "btn_6_2";
             this.btn_6_2.Size = new System.Drawing.Size(75, 43);
@@ -527,7 +527,7 @@ namespace Project_M_CSharp
             // 
             // btn_5_2
             // 
-            this.btn_5_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_5_2.BackColor = System.Drawing.Color.Black;
             this.btn_5_2.Location = new System.Drawing.Point(1008, 52);
             this.btn_5_2.Name = "btn_5_2";
             this.btn_5_2.Size = new System.Drawing.Size(75, 43);
@@ -538,7 +538,7 @@ namespace Project_M_CSharp
             // 
             // btn_4_2
             // 
-            this.btn_4_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_4_2.BackColor = System.Drawing.Color.Black;
             this.btn_4_2.Location = new System.Drawing.Point(927, 52);
             this.btn_4_2.Name = "btn_4_2";
             this.btn_4_2.Size = new System.Drawing.Size(75, 43);
@@ -549,7 +549,7 @@ namespace Project_M_CSharp
             // 
             // btn_3_2
             // 
-            this.btn_3_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_3_2.BackColor = System.Drawing.Color.Black;
             this.btn_3_2.Location = new System.Drawing.Point(846, 52);
             this.btn_3_2.Name = "btn_3_2";
             this.btn_3_2.Size = new System.Drawing.Size(75, 43);
@@ -560,7 +560,7 @@ namespace Project_M_CSharp
             // 
             // btn_2_2
             // 
-            this.btn_2_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_2_2.BackColor = System.Drawing.Color.Black;
             this.btn_2_2.Location = new System.Drawing.Point(765, 52);
             this.btn_2_2.Name = "btn_2_2";
             this.btn_2_2.Size = new System.Drawing.Size(75, 43);
@@ -582,7 +582,7 @@ namespace Project_M_CSharp
             // 
             // btn_18_1
             // 
-            this.btn_18_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_18_1.BackColor = System.Drawing.Color.Black;
             this.btn_18_1.Location = new System.Drawing.Point(602, 150);
             this.btn_18_1.Name = "btn_18_1";
             this.btn_18_1.Size = new System.Drawing.Size(75, 43);
@@ -593,7 +593,7 @@ namespace Project_M_CSharp
             // 
             // btn_15_2
             // 
-            this.btn_15_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_15_2.BackColor = System.Drawing.Color.Black;
             this.btn_15_2.Location = new System.Drawing.Point(1008, 150);
             this.btn_15_2.Name = "btn_15_2";
             this.btn_15_2.Size = new System.Drawing.Size(75, 43);
@@ -604,7 +604,7 @@ namespace Project_M_CSharp
             // 
             // btn_14_2
             // 
-            this.btn_14_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_14_2.BackColor = System.Drawing.Color.Black;
             this.btn_14_2.Location = new System.Drawing.Point(1089, 150);
             this.btn_14_2.Name = "btn_14_2";
             this.btn_14_2.Size = new System.Drawing.Size(75, 43);
@@ -615,7 +615,7 @@ namespace Project_M_CSharp
             // 
             // btn_13_2
             // 
-            this.btn_13_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_13_2.BackColor = System.Drawing.Color.Black;
             this.btn_13_2.Location = new System.Drawing.Point(1170, 150);
             this.btn_13_2.Name = "btn_13_2";
             this.btn_13_2.Size = new System.Drawing.Size(75, 43);
@@ -626,7 +626,7 @@ namespace Project_M_CSharp
             // 
             // btn_12_2
             // 
-            this.btn_12_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_12_2.BackColor = System.Drawing.Color.Black;
             this.btn_12_2.Location = new System.Drawing.Point(1251, 150);
             this.btn_12_2.Name = "btn_12_2";
             this.btn_12_2.Size = new System.Drawing.Size(75, 43);
@@ -637,7 +637,7 @@ namespace Project_M_CSharp
             // 
             // btn_11_2
             // 
-            this.btn_11_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_11_2.BackColor = System.Drawing.Color.Black;
             this.btn_11_2.Location = new System.Drawing.Point(1332, 150);
             this.btn_11_2.Name = "btn_11_2";
             this.btn_11_2.Size = new System.Drawing.Size(75, 43);
@@ -648,7 +648,7 @@ namespace Project_M_CSharp
             // 
             // btn_10_2
             // 
-            this.btn_10_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_10_2.BackColor = System.Drawing.Color.Black;
             this.btn_10_2.Location = new System.Drawing.Point(1332, 101);
             this.btn_10_2.Name = "btn_10_2";
             this.btn_10_2.Size = new System.Drawing.Size(75, 43);
@@ -659,7 +659,7 @@ namespace Project_M_CSharp
             // 
             // btn_9_2
             // 
-            this.btn_9_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_9_2.BackColor = System.Drawing.Color.Black;
             this.btn_9_2.Location = new System.Drawing.Point(1332, 52);
             this.btn_9_2.Name = "btn_9_2";
             this.btn_9_2.Size = new System.Drawing.Size(75, 43);
@@ -670,7 +670,7 @@ namespace Project_M_CSharp
             // 
             // btn_22_2
             // 
-            this.btn_22_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_22_2.BackColor = System.Drawing.Color.Black;
             this.btn_22_2.Location = new System.Drawing.Point(765, 248);
             this.btn_22_2.Name = "btn_22_2";
             this.btn_22_2.Size = new System.Drawing.Size(75, 43);
@@ -681,7 +681,7 @@ namespace Project_M_CSharp
             // 
             // btn_23_1
             // 
-            this.btn_23_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_23_1.BackColor = System.Drawing.Color.Black;
             this.btn_23_1.Location = new System.Drawing.Point(521, 248);
             this.btn_23_1.Name = "btn_23_1";
             this.btn_23_1.Size = new System.Drawing.Size(75, 43);
@@ -692,7 +692,7 @@ namespace Project_M_CSharp
             // 
             // btn_22_1
             // 
-            this.btn_22_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_22_1.BackColor = System.Drawing.Color.Black;
             this.btn_22_1.Location = new System.Drawing.Point(602, 248);
             this.btn_22_1.Name = "btn_22_1";
             this.btn_22_1.Size = new System.Drawing.Size(75, 43);
@@ -725,7 +725,7 @@ namespace Project_M_CSharp
             // 
             // btn_18_2
             // 
-            this.btn_18_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_18_2.BackColor = System.Drawing.Color.Black;
             this.btn_18_2.Location = new System.Drawing.Point(765, 150);
             this.btn_18_2.Name = "btn_18_2";
             this.btn_18_2.Size = new System.Drawing.Size(75, 43);
@@ -736,7 +736,7 @@ namespace Project_M_CSharp
             // 
             // btn_17_2
             // 
-            this.btn_17_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_17_2.BackColor = System.Drawing.Color.Black;
             this.btn_17_2.Location = new System.Drawing.Point(846, 150);
             this.btn_17_2.Name = "btn_17_2";
             this.btn_17_2.Size = new System.Drawing.Size(75, 43);
@@ -747,7 +747,7 @@ namespace Project_M_CSharp
             // 
             // btn_16_2
             // 
-            this.btn_16_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_16_2.BackColor = System.Drawing.Color.Black;
             this.btn_16_2.Location = new System.Drawing.Point(927, 150);
             this.btn_16_2.Name = "btn_16_2";
             this.btn_16_2.Size = new System.Drawing.Size(75, 43);
@@ -758,7 +758,7 @@ namespace Project_M_CSharp
             // 
             // btn_26_3
             // 
-            this.btn_26_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_26_3.BackColor = System.Drawing.Color.Black;
             this.btn_26_3.Location = new System.Drawing.Point(765, 346);
             this.btn_26_3.Name = "btn_26_3";
             this.btn_26_3.Size = new System.Drawing.Size(75, 43);
@@ -769,7 +769,7 @@ namespace Project_M_CSharp
             // 
             // btn_27_2
             // 
-            this.btn_27_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_27_2.BackColor = System.Drawing.Color.Black;
             this.btn_27_2.Location = new System.Drawing.Point(683, 346);
             this.btn_27_2.Name = "btn_27_2";
             this.btn_27_2.Size = new System.Drawing.Size(75, 43);
@@ -780,7 +780,7 @@ namespace Project_M_CSharp
             // 
             // btn_26_2
             // 
-            this.btn_26_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_26_2.BackColor = System.Drawing.Color.Black;
             this.btn_26_2.Location = new System.Drawing.Point(602, 346);
             this.btn_26_2.Name = "btn_26_2";
             this.btn_26_2.Size = new System.Drawing.Size(75, 43);
@@ -802,7 +802,7 @@ namespace Project_M_CSharp
             // 
             // btn_24_1
             // 
-            this.btn_24_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_24_1.BackColor = System.Drawing.Color.Black;
             this.btn_24_1.Location = new System.Drawing.Point(521, 297);
             this.btn_24_1.Name = "btn_24_1";
             this.btn_24_1.Size = new System.Drawing.Size(75, 43);
@@ -813,7 +813,7 @@ namespace Project_M_CSharp
             // 
             // btn_24_2
             // 
-            this.btn_24_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_24_2.BackColor = System.Drawing.Color.Black;
             this.btn_24_2.Location = new System.Drawing.Point(846, 297);
             this.btn_24_2.Name = "btn_24_2";
             this.btn_24_2.Size = new System.Drawing.Size(75, 43);
@@ -824,7 +824,7 @@ namespace Project_M_CSharp
             // 
             // btn_23_2
             // 
-            this.btn_23_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_23_2.BackColor = System.Drawing.Color.Black;
             this.btn_23_2.Location = new System.Drawing.Point(846, 248);
             this.btn_23_2.Name = "btn_23_2";
             this.btn_23_2.Size = new System.Drawing.Size(75, 43);
@@ -835,7 +835,7 @@ namespace Project_M_CSharp
             // 
             // btn_28_1
             // 
-            this.btn_28_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_28_1.BackColor = System.Drawing.Color.Black;
             this.btn_28_1.Location = new System.Drawing.Point(359, 395);
             this.btn_28_1.Name = "btn_28_1";
             this.btn_28_1.Size = new System.Drawing.Size(75, 43);
@@ -846,7 +846,7 @@ namespace Project_M_CSharp
             // 
             // btn_27_1
             // 
-            this.btn_27_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_27_1.BackColor = System.Drawing.Color.Black;
             this.btn_27_1.Location = new System.Drawing.Point(359, 346);
             this.btn_27_1.Name = "btn_27_1";
             this.btn_27_1.Size = new System.Drawing.Size(75, 43);
@@ -857,7 +857,7 @@ namespace Project_M_CSharp
             // 
             // btn_26_1
             // 
-            this.btn_26_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_26_1.BackColor = System.Drawing.Color.Black;
             this.btn_26_1.Location = new System.Drawing.Point(440, 346);
             this.btn_26_1.Name = "btn_26_1";
             this.btn_26_1.Size = new System.Drawing.Size(75, 43);
@@ -879,7 +879,7 @@ namespace Project_M_CSharp
             // 
             // btn_31_2
             // 
-            this.btn_31_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_31_2.BackColor = System.Drawing.Color.Black;
             this.btn_31_2.Location = new System.Drawing.Point(521, 444);
             this.btn_31_2.Name = "btn_31_2";
             this.btn_31_2.Size = new System.Drawing.Size(75, 43);
@@ -890,7 +890,7 @@ namespace Project_M_CSharp
             // 
             // btn_32_3
             // 
-            this.btn_32_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_32_3.BackColor = System.Drawing.Color.Black;
             this.btn_32_3.Location = new System.Drawing.Point(602, 444);
             this.btn_32_3.Name = "btn_32_3";
             this.btn_32_3.Size = new System.Drawing.Size(75, 43);
@@ -901,7 +901,7 @@ namespace Project_M_CSharp
             // 
             // btn_33_3
             // 
-            this.btn_33_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_33_3.BackColor = System.Drawing.Color.Black;
             this.btn_33_3.Location = new System.Drawing.Point(683, 444);
             this.btn_33_3.Name = "btn_33_3";
             this.btn_33_3.Size = new System.Drawing.Size(75, 43);
@@ -912,7 +912,7 @@ namespace Project_M_CSharp
             // 
             // btn_32_4
             // 
-            this.btn_32_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_32_4.BackColor = System.Drawing.Color.Black;
             this.btn_32_4.Location = new System.Drawing.Point(765, 444);
             this.btn_32_4.Name = "btn_32_4";
             this.btn_32_4.Size = new System.Drawing.Size(75, 43);
@@ -923,7 +923,7 @@ namespace Project_M_CSharp
             // 
             // btn_31_3
             // 
-            this.btn_31_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_31_3.BackColor = System.Drawing.Color.Black;
             this.btn_31_3.Location = new System.Drawing.Point(846, 444);
             this.btn_31_3.Name = "btn_31_3";
             this.btn_31_3.Size = new System.Drawing.Size(75, 43);
@@ -934,7 +934,7 @@ namespace Project_M_CSharp
             // 
             // btn_30_3
             // 
-            this.btn_30_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_30_3.BackColor = System.Drawing.Color.Black;
             this.btn_30_3.Location = new System.Drawing.Point(927, 444);
             this.btn_30_3.Name = "btn_30_3";
             this.btn_30_3.Size = new System.Drawing.Size(75, 43);
@@ -945,7 +945,7 @@ namespace Project_M_CSharp
             // 
             // btn_29_2
             // 
-            this.btn_29_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_29_2.BackColor = System.Drawing.Color.Black;
             this.btn_29_2.Location = new System.Drawing.Point(1008, 444);
             this.btn_29_2.Name = "btn_29_2";
             this.btn_29_2.Size = new System.Drawing.Size(75, 43);
@@ -956,7 +956,7 @@ namespace Project_M_CSharp
             // 
             // btn_28_2
             // 
-            this.btn_28_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_28_2.BackColor = System.Drawing.Color.Black;
             this.btn_28_2.Location = new System.Drawing.Point(1008, 395);
             this.btn_28_2.Name = "btn_28_2";
             this.btn_28_2.Size = new System.Drawing.Size(75, 43);
@@ -967,7 +967,7 @@ namespace Project_M_CSharp
             // 
             // btn_27_3
             // 
-            this.btn_27_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_27_3.BackColor = System.Drawing.Color.Black;
             this.btn_27_3.Location = new System.Drawing.Point(1008, 346);
             this.btn_27_3.Name = "btn_27_3";
             this.btn_27_3.Size = new System.Drawing.Size(75, 43);
@@ -978,7 +978,7 @@ namespace Project_M_CSharp
             // 
             // btn_26_4
             // 
-            this.btn_26_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_26_4.BackColor = System.Drawing.Color.Black;
             this.btn_26_4.Location = new System.Drawing.Point(927, 346);
             this.btn_26_4.Name = "btn_26_4";
             this.btn_26_4.Size = new System.Drawing.Size(75, 43);
@@ -989,7 +989,7 @@ namespace Project_M_CSharp
             // 
             // btn_29_1
             // 
-            this.btn_29_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_29_1.BackColor = System.Drawing.Color.Black;
             this.btn_29_1.Location = new System.Drawing.Point(359, 444);
             this.btn_29_1.Name = "btn_29_1";
             this.btn_29_1.Size = new System.Drawing.Size(75, 43);
@@ -1000,7 +1000,7 @@ namespace Project_M_CSharp
             // 
             // btn_30_2
             // 
-            this.btn_30_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_30_2.BackColor = System.Drawing.Color.Black;
             this.btn_30_2.Location = new System.Drawing.Point(440, 444);
             this.btn_30_2.Name = "btn_30_2";
             this.btn_30_2.Size = new System.Drawing.Size(75, 43);
@@ -1011,7 +1011,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_3
             // 
-            this.btn_34_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_3.BackColor = System.Drawing.Color.Black;
             this.btn_34_3.Location = new System.Drawing.Point(440, 542);
             this.btn_34_3.Name = "btn_34_3";
             this.btn_34_3.Size = new System.Drawing.Size(75, 43);
@@ -1033,7 +1033,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_2
             // 
-            this.btn_34_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_2.BackColor = System.Drawing.Color.Black;
             this.btn_34_2.Location = new System.Drawing.Point(278, 542);
             this.btn_34_2.Name = "btn_34_2";
             this.btn_34_2.Size = new System.Drawing.Size(75, 43);
@@ -1055,7 +1055,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_1
             // 
-            this.btn_34_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_1.BackColor = System.Drawing.Color.Black;
             this.btn_34_1.Location = new System.Drawing.Point(116, 542);
             this.btn_34_1.Name = "btn_34_1";
             this.btn_34_1.Size = new System.Drawing.Size(75, 43);
@@ -1066,7 +1066,7 @@ namespace Project_M_CSharp
             // 
             // btn_33_1
             // 
-            this.btn_33_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_33_1.BackColor = System.Drawing.Color.Black;
             this.btn_33_1.Location = new System.Drawing.Point(197, 542);
             this.btn_33_1.Name = "btn_33_1";
             this.btn_33_1.Size = new System.Drawing.Size(75, 43);
@@ -1077,7 +1077,7 @@ namespace Project_M_CSharp
             // 
             // btn_32_1
             // 
-            this.btn_32_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_32_1.BackColor = System.Drawing.Color.Black;
             this.btn_32_1.Location = new System.Drawing.Point(197, 493);
             this.btn_32_1.Name = "btn_32_1";
             this.btn_32_1.Size = new System.Drawing.Size(75, 43);
@@ -1099,7 +1099,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_8
             // 
-            this.btn_34_8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_8.BackColor = System.Drawing.Color.Black;
             this.btn_34_8.Location = new System.Drawing.Point(1251, 542);
             this.btn_34_8.Name = "btn_34_8";
             this.btn_34_8.Size = new System.Drawing.Size(75, 43);
@@ -1110,7 +1110,7 @@ namespace Project_M_CSharp
             // 
             // btn_33_5
             // 
-            this.btn_33_5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_33_5.BackColor = System.Drawing.Color.Black;
             this.btn_33_5.Location = new System.Drawing.Point(1170, 542);
             this.btn_33_5.Name = "btn_33_5";
             this.btn_33_5.Size = new System.Drawing.Size(75, 43);
@@ -1121,7 +1121,7 @@ namespace Project_M_CSharp
             // 
             // btn_32_6
             // 
-            this.btn_32_6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_32_6.BackColor = System.Drawing.Color.Black;
             this.btn_32_6.Location = new System.Drawing.Point(1170, 493);
             this.btn_32_6.Name = "btn_32_6";
             this.btn_32_6.Size = new System.Drawing.Size(75, 43);
@@ -1132,7 +1132,7 @@ namespace Project_M_CSharp
             // 
             // btn_31_4
             // 
-            this.btn_31_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_31_4.BackColor = System.Drawing.Color.Black;
             this.btn_31_4.Location = new System.Drawing.Point(1170, 444);
             this.btn_31_4.Name = "btn_31_4";
             this.btn_31_4.Size = new System.Drawing.Size(75, 43);
@@ -1143,7 +1143,7 @@ namespace Project_M_CSharp
             // 
             // btn_30_4
             // 
-            this.btn_30_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_30_4.BackColor = System.Drawing.Color.Black;
             this.btn_30_4.Location = new System.Drawing.Point(1089, 444);
             this.btn_30_4.Name = "btn_30_4";
             this.btn_30_4.Size = new System.Drawing.Size(75, 43);
@@ -1154,7 +1154,7 @@ namespace Project_M_CSharp
             // 
             // btn_31_1
             // 
-            this.btn_31_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_31_1.BackColor = System.Drawing.Color.Black;
             this.btn_31_1.Location = new System.Drawing.Point(197, 444);
             this.btn_31_1.Name = "btn_31_1";
             this.btn_31_1.Size = new System.Drawing.Size(75, 43);
@@ -1165,7 +1165,7 @@ namespace Project_M_CSharp
             // 
             // btn_30_1
             // 
-            this.btn_30_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_30_1.BackColor = System.Drawing.Color.Black;
             this.btn_30_1.Location = new System.Drawing.Point(278, 444);
             this.btn_30_1.Name = "btn_30_1";
             this.btn_30_1.Size = new System.Drawing.Size(75, 43);
@@ -1176,7 +1176,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_6
             // 
-            this.btn_38_6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_6.BackColor = System.Drawing.Color.Black;
             this.btn_38_6.Location = new System.Drawing.Point(926, 640);
             this.btn_38_6.Name = "btn_38_6";
             this.btn_38_6.Size = new System.Drawing.Size(75, 43);
@@ -1187,7 +1187,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_7
             // 
-            this.btn_38_7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_7.BackColor = System.Drawing.Color.Black;
             this.btn_38_7.Location = new System.Drawing.Point(1089, 640);
             this.btn_38_7.Name = "btn_38_7";
             this.btn_38_7.Size = new System.Drawing.Size(75, 43);
@@ -1198,7 +1198,7 @@ namespace Project_M_CSharp
             // 
             // btn_39_4
             // 
-            this.btn_39_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_39_4.BackColor = System.Drawing.Color.Black;
             this.btn_39_4.Location = new System.Drawing.Point(1170, 640);
             this.btn_39_4.Name = "btn_39_4";
             this.btn_39_4.Size = new System.Drawing.Size(75, 43);
@@ -1209,7 +1209,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_8
             // 
-            this.btn_38_8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_8.BackColor = System.Drawing.Color.Black;
             this.btn_38_8.Location = new System.Drawing.Point(1251, 640);
             this.btn_38_8.Name = "btn_38_8";
             this.btn_38_8.Size = new System.Drawing.Size(75, 43);
@@ -1220,7 +1220,7 @@ namespace Project_M_CSharp
             // 
             // btn_37_5
             // 
-            this.btn_37_5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_37_5.BackColor = System.Drawing.Color.Black;
             this.btn_37_5.Location = new System.Drawing.Point(1332, 640);
             this.btn_37_5.Name = "btn_37_5";
             this.btn_37_5.Size = new System.Drawing.Size(75, 43);
@@ -1231,7 +1231,7 @@ namespace Project_M_CSharp
             // 
             // btn_36_5
             // 
-            this.btn_36_5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_36_5.BackColor = System.Drawing.Color.Black;
             this.btn_36_5.Location = new System.Drawing.Point(1332, 591);
             this.btn_36_5.Name = "btn_36_5";
             this.btn_36_5.Size = new System.Drawing.Size(75, 43);
@@ -1242,7 +1242,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_7
             // 
-            this.btn_34_7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_7.BackColor = System.Drawing.Color.Black;
             this.btn_34_7.Location = new System.Drawing.Point(1088, 542);
             this.btn_34_7.Name = "btn_34_7";
             this.btn_34_7.Size = new System.Drawing.Size(75, 43);
@@ -1264,7 +1264,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_6
             // 
-            this.btn_34_6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_6.BackColor = System.Drawing.Color.Black;
             this.btn_34_6.Location = new System.Drawing.Point(926, 542);
             this.btn_34_6.Name = "btn_34_6";
             this.btn_34_6.Size = new System.Drawing.Size(75, 43);
@@ -1275,7 +1275,7 @@ namespace Project_M_CSharp
             // 
             // btn_32_5
             // 
-            this.btn_32_5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_32_5.BackColor = System.Drawing.Color.Black;
             this.btn_32_5.Location = new System.Drawing.Point(846, 493);
             this.btn_32_5.Name = "btn_32_5";
             this.btn_32_5.Size = new System.Drawing.Size(75, 43);
@@ -1286,7 +1286,7 @@ namespace Project_M_CSharp
             // 
             // btn_33_4
             // 
-            this.btn_33_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_33_4.BackColor = System.Drawing.Color.Black;
             this.btn_33_4.Location = new System.Drawing.Point(845, 542);
             this.btn_33_4.Name = "btn_33_4";
             this.btn_33_4.Size = new System.Drawing.Size(75, 43);
@@ -1297,7 +1297,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_5
             // 
-            this.btn_34_5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_5.BackColor = System.Drawing.Color.Black;
             this.btn_34_5.Location = new System.Drawing.Point(764, 542);
             this.btn_34_5.Name = "btn_34_5";
             this.btn_34_5.Size = new System.Drawing.Size(75, 43);
@@ -1319,7 +1319,7 @@ namespace Project_M_CSharp
             // 
             // btn_34_4
             // 
-            this.btn_34_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_34_4.BackColor = System.Drawing.Color.Black;
             this.btn_34_4.Location = new System.Drawing.Point(602, 542);
             this.btn_34_4.Name = "btn_34_4";
             this.btn_34_4.Size = new System.Drawing.Size(75, 43);
@@ -1330,7 +1330,7 @@ namespace Project_M_CSharp
             // 
             // btn_32_2
             // 
-            this.btn_32_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_32_2.BackColor = System.Drawing.Color.Black;
             this.btn_32_2.Location = new System.Drawing.Point(521, 493);
             this.btn_32_2.Name = "btn_32_2";
             this.btn_32_2.Size = new System.Drawing.Size(75, 43);
@@ -1341,7 +1341,7 @@ namespace Project_M_CSharp
             // 
             // btn_33_2
             // 
-            this.btn_33_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_33_2.BackColor = System.Drawing.Color.Black;
             this.btn_33_2.Location = new System.Drawing.Point(521, 542);
             this.btn_33_2.Name = "btn_33_2";
             this.btn_33_2.Size = new System.Drawing.Size(75, 43);
@@ -1352,7 +1352,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_4
             // 
-            this.btn_38_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_4.BackColor = System.Drawing.Color.Black;
             this.btn_38_4.Location = new System.Drawing.Point(602, 640);
             this.btn_38_4.Name = "btn_38_4";
             this.btn_38_4.Size = new System.Drawing.Size(75, 43);
@@ -1363,7 +1363,7 @@ namespace Project_M_CSharp
             // 
             // btn_37_3
             // 
-            this.btn_37_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_37_3.BackColor = System.Drawing.Color.Black;
             this.btn_37_3.Location = new System.Drawing.Point(683, 640);
             this.btn_37_3.Name = "btn_37_3";
             this.btn_37_3.Size = new System.Drawing.Size(75, 43);
@@ -1374,7 +1374,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_5
             // 
-            this.btn_38_5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_5.BackColor = System.Drawing.Color.Black;
             this.btn_38_5.Location = new System.Drawing.Point(765, 640);
             this.btn_38_5.Name = "btn_38_5";
             this.btn_38_5.Size = new System.Drawing.Size(75, 43);
@@ -1385,7 +1385,7 @@ namespace Project_M_CSharp
             // 
             // btn_39_3
             // 
-            this.btn_39_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_39_3.BackColor = System.Drawing.Color.Black;
             this.btn_39_3.Location = new System.Drawing.Point(846, 640);
             this.btn_39_3.Name = "btn_39_3";
             this.btn_39_3.Size = new System.Drawing.Size(75, 43);
@@ -1396,7 +1396,7 @@ namespace Project_M_CSharp
             // 
             // btn_37_4
             // 
-            this.btn_37_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_37_4.BackColor = System.Drawing.Color.Black;
             this.btn_37_4.Location = new System.Drawing.Point(1007, 640);
             this.btn_37_4.Name = "btn_37_4";
             this.btn_37_4.Size = new System.Drawing.Size(75, 43);
@@ -1407,7 +1407,7 @@ namespace Project_M_CSharp
             // 
             // btn_37_1
             // 
-            this.btn_37_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_37_1.BackColor = System.Drawing.Color.Black;
             this.btn_37_1.Location = new System.Drawing.Point(38, 640);
             this.btn_37_1.Name = "btn_37_1";
             this.btn_37_1.Size = new System.Drawing.Size(75, 43);
@@ -1418,7 +1418,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_1
             // 
-            this.btn_38_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_1.BackColor = System.Drawing.Color.Black;
             this.btn_38_1.Location = new System.Drawing.Point(116, 640);
             this.btn_38_1.Name = "btn_38_1";
             this.btn_38_1.Size = new System.Drawing.Size(75, 43);
@@ -1429,7 +1429,7 @@ namespace Project_M_CSharp
             // 
             // btn_39_1
             // 
-            this.btn_39_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_39_1.BackColor = System.Drawing.Color.Black;
             this.btn_39_1.Location = new System.Drawing.Point(197, 640);
             this.btn_39_1.Name = "btn_39_1";
             this.btn_39_1.Size = new System.Drawing.Size(75, 43);
@@ -1440,7 +1440,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_2
             // 
-            this.btn_38_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_2.BackColor = System.Drawing.Color.Black;
             this.btn_38_2.Location = new System.Drawing.Point(278, 640);
             this.btn_38_2.Name = "btn_38_2";
             this.btn_38_2.Size = new System.Drawing.Size(75, 43);
@@ -1451,7 +1451,7 @@ namespace Project_M_CSharp
             // 
             // btn_37_2
             // 
-            this.btn_37_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_37_2.BackColor = System.Drawing.Color.Black;
             this.btn_37_2.Location = new System.Drawing.Point(359, 640);
             this.btn_37_2.Name = "btn_37_2";
             this.btn_37_2.Size = new System.Drawing.Size(75, 43);
@@ -1462,7 +1462,7 @@ namespace Project_M_CSharp
             // 
             // btn_38_3
             // 
-            this.btn_38_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_38_3.BackColor = System.Drawing.Color.Black;
             this.btn_38_3.Location = new System.Drawing.Point(440, 640);
             this.btn_38_3.Name = "btn_38_3";
             this.btn_38_3.Size = new System.Drawing.Size(75, 43);
@@ -1473,7 +1473,7 @@ namespace Project_M_CSharp
             // 
             // btn_39_2
             // 
-            this.btn_39_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_39_2.BackColor = System.Drawing.Color.Black;
             this.btn_39_2.Location = new System.Drawing.Point(521, 640);
             this.btn_39_2.Name = "btn_39_2";
             this.btn_39_2.Size = new System.Drawing.Size(75, 43);
@@ -1484,7 +1484,7 @@ namespace Project_M_CSharp
             // 
             // btn_36_1
             // 
-            this.btn_36_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_36_1.BackColor = System.Drawing.Color.Black;
             this.btn_36_1.Location = new System.Drawing.Point(38, 591);
             this.btn_36_1.Name = "btn_36_1";
             this.btn_36_1.Size = new System.Drawing.Size(75, 43);
@@ -1495,7 +1495,7 @@ namespace Project_M_CSharp
             // 
             // btn_36_4
             // 
-            this.btn_36_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_36_4.BackColor = System.Drawing.Color.Black;
             this.btn_36_4.Location = new System.Drawing.Point(1008, 591);
             this.btn_36_4.Name = "btn_36_4";
             this.btn_36_4.Size = new System.Drawing.Size(75, 43);
@@ -1506,7 +1506,7 @@ namespace Project_M_CSharp
             // 
             // btn_36_3
             // 
-            this.btn_36_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_36_3.BackColor = System.Drawing.Color.Black;
             this.btn_36_3.Location = new System.Drawing.Point(683, 591);
             this.btn_36_3.Name = "btn_36_3";
             this.btn_36_3.Size = new System.Drawing.Size(75, 43);
@@ -1517,7 +1517,7 @@ namespace Project_M_CSharp
             // 
             // btn_36_2
             // 
-            this.btn_36_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_36_2.BackColor = System.Drawing.Color.Black;
             this.btn_36_2.Location = new System.Drawing.Point(359, 591);
             this.btn_36_2.Name = "btn_36_2";
             this.btn_36_2.Size = new System.Drawing.Size(75, 43);
@@ -1583,7 +1583,7 @@ namespace Project_M_CSharp
             // 
             // btn_40_green_4
             // 
-            this.btn_40_green_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_40_green_4.BackColor = System.Drawing.Color.Green;
             this.btn_40_green_4.Location = new System.Drawing.Point(566, 788);
             this.btn_40_green_4.Name = "btn_40_green_4";
             this.btn_40_green_4.Size = new System.Drawing.Size(75, 43);
@@ -1594,7 +1594,7 @@ namespace Project_M_CSharp
             // 
             // btn_40_green_3
             // 
-            this.btn_40_green_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_40_green_3.BackColor = System.Drawing.Color.Green;
             this.btn_40_green_3.Location = new System.Drawing.Point(480, 788);
             this.btn_40_green_3.Name = "btn_40_green_3";
             this.btn_40_green_3.Size = new System.Drawing.Size(75, 43);
@@ -1605,7 +1605,7 @@ namespace Project_M_CSharp
             // 
             // btn_40_green_5
             // 
-            this.btn_40_green_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_40_green_5.BackColor = System.Drawing.Color.Green;
             this.btn_40_green_5.Location = new System.Drawing.Point(602, 739);
             this.btn_40_green_5.Name = "btn_40_green_5";
             this.btn_40_green_5.Size = new System.Drawing.Size(75, 43);
@@ -1616,7 +1616,7 @@ namespace Project_M_CSharp
             // 
             // btn_40_green_2
             // 
-            this.btn_40_green_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_40_green_2.BackColor = System.Drawing.Color.Green;
             this.btn_40_green_2.Location = new System.Drawing.Point(440, 739);
             this.btn_40_green_2.Name = "btn_40_green_2";
             this.btn_40_green_2.Size = new System.Drawing.Size(75, 43);
@@ -1627,7 +1627,7 @@ namespace Project_M_CSharp
             // 
             // btn_40_green_1
             // 
-            this.btn_40_green_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_40_green_1.BackColor = System.Drawing.Color.Green;
             this.btn_40_green_1.Location = new System.Drawing.Point(521, 689);
             this.btn_40_green_1.Name = "btn_40_green_1";
             this.btn_40_green_1.Size = new System.Drawing.Size(75, 43);
