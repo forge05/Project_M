@@ -14,7 +14,7 @@ namespace Project_M_CSharp
     {
         int Wurfzahl;
         Feld start;
-
+        Boolean blockSetzen = false;
 
         public frm_Spielfeld()
         {
@@ -49,32 +49,40 @@ namespace Project_M_CSharp
             {
                 if(f.content != Feld.Content.BLOCK)
                 {
-                    foreach (Feld nachbar in f.nachbarn)
-                    {
-                        if (nachbar != altesFeld)                           //Vergleiche in foreach nur zu Beginn ineffiezient
+                    //if(f.content != spielerContent)                           //wird später beim Einfärben abgefangen, weil man ansonsten keine eigenen Figuren überspringen könnte
+                    //{
+                        foreach (Feld nachbar in f.nachbarn)
                         {
-                            if (nachbar.Entfernung_zum_Ziel < 40)           //sicherstellen, dass nicht zurück in die Startfelder gesprungen wird um Endlosschleife zu vermeiden
+                            if (nachbar != altesFeld)                           //Vergleiche in foreach nur zu Beginn ineffiezient
                             {
-                                rueckOptionenPropagiere(nachbar, spruenge - 1, f, spielerContent);
+                                if (nachbar.Entfernung_zum_Ziel < 40)           //sicherstellen, dass nicht zurück in die Startfelder gesprungen wird um Endlosschleife zu vermeiden
+                                {
+                                    rueckOptionenPropagiere(nachbar, spruenge - 1, f, spielerContent);
+                                }
                             }
+
                         }
-
-                    }
+                    //}
                 }
-                
-
             }
             else
             {
-                f.BackColor = Color.Brown;
+                if(f.content != spielerContent)
+                {
+                    f.BackColor = Color.Brown;
+                }
                 if(f.content == Feld.Content.BLOCK)
-                f.Text = "BLOCK";
+                {
+                    f.Text = "BLOCK";
+                }
                 if ((int)f.content <= 3 && f.content != spielerContent)
                 {
                     f.Text = "Gegner";
                 }
                 if (f.content == Feld.Content.GOAL)
+                {
                     f.Text = "Ziel!";
+                }
             }
             //int Entfernung_zum_Ziel = f.Entfern_zum_Ziel;
             //foreach (Feld f_rueck in pnl_alleFelder.Controls)
@@ -94,18 +102,23 @@ namespace Project_M_CSharp
                 {
                     case Feld.Content.RED:
                         f.BackColor = Color.Red;
+                        f.Text = "";
                         break;
                     case Feld.Content.GREEN:
                         f.BackColor = Color.Green;
+                        f.Text = "";
                         break;
                     case Feld.Content.YELLOW:
                         f.BackColor = Color.Yellow;
+                        f.Text = "";
                         break;
                     case Feld.Content.BLUE:
                         f.BackColor = Color.Blue;
+                        f.Text = "";
                         break;
                     case Feld.Content.EMPTY:
                         f.BackColor = Color.Black;
+                        f.Text = "";
                         break;
                     case Feld.Content.BLOCK:
                         f.BackColor = Color.White;
@@ -120,30 +133,100 @@ namespace Project_M_CSharp
 
         private void ruecken(Feld ziel, Feld s)
         {
+            Feld.Content Ursprungscontent = ziel.content;
             ziel.content = s.content;
             ziel.BackColor = s.BackColor;
 
+            if (s.Entfernung_zum_Ziel == 40)                                      //startfelder disablen
+                s.Enabled = false;                                                  //nachher nochmal enablen
+            else
+            {
+                s.content = Feld.Content.EMPTY;
+                s.BackColor = Color.Black;
+            }
 
-            //if()                                      //startfelder disablen
-            //s.Enabled = false;
-            //else
+            rueckOptionenZuruecksetzen();
+
+            //if(Ursprungscontent == Feld.Content.BLOCK)
+            //{
+                
+            //}
+
+            switch(Ursprungscontent)
+            {
+                case Feld.Content.BLOCK:
+                    blockSetzen = true;
+                    break;
+                case Feld.Content.RED:
+                    schlagen(Ursprungscontent);
+                    break;
+                case Feld.Content.GREEN:
+                    schlagen(Ursprungscontent);
+                    break;
+                case Feld.Content.YELLOW:
+                    schlagen(Ursprungscontent);
+                    break;
+                case Feld.Content.BLUE:
+                    schlagen(Ursprungscontent);
+                    break;
+            }
+        }
+
+        private void schlagen(Feld.Content c)
+        {
+            foreach(Feld f in pnl_alleFelder.Controls)
+            {
+                if(f.Entfernung_zum_Ziel == 40)
+                {
+                    if(f.content == c)
+                    {
+                        if(!f.Enabled)
+                        {
+                            f.Enabled = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void blockieren(Feld f)
+        {
+            f.content = Feld.Content.BLOCK;
+            f.BackColor = Color.White;
+            blockSetzen = false;
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
             Feld myfield = (Feld)sender;
+            
             int rueckzahl = Wurfzahl;
-            if(myfield.BackColor != Color.Brown)
-            rueckOptionenZuruecksetzen();
-            if((int)myfield.content <= 3)
+
+            if(!blockSetzen)
             {
-                start = myfield;
-                rueckOptionenPropagiere(myfield, rueckzahl, myfield, myfield.content);
+                if (myfield.BackColor != Color.Brown)
+                    rueckOptionenZuruecksetzen();
+                if (myfield.BackColor == Color.Brown)
+                {
+                    ruecken(myfield, start);
+                    //rueckOptionenZuruecksetzen();
+                }
+                else if ((int)myfield.content <= 3)
+                {
+                    start = myfield;
+                    rueckOptionenPropagiere(myfield, rueckzahl, null, myfield.content);
+                }
+                
             }
-            if(myfield.BackColor == Color.Brown)
+            else
             {
-                ruecken(myfield, start);
+                if(myfield.content == Feld.Content.EMPTY)
+                {
+                    blockieren(myfield);
+                }
             }
+            
 
 
 
