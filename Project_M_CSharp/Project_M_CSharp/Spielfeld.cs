@@ -15,12 +15,14 @@ namespace Project_M_CSharp
         int Wurfzahl;
         Feld start;
         Boolean blockSetzen = false;
+        Form frm;
 
-        public frm_Spielfeld()
+        public frm_Spielfeld(Form myFrm)
         {
+            frm = myFrm;
             InitializeComponent();
             Container buttonContainer = new Container();
-            foreach(Button b in pnl_alleFelder.Controls)
+            foreach(Feld b in pnl_alleFelder.Controls)
             {
                 buttonContainer.Add(b);
             }
@@ -244,6 +246,15 @@ namespace Project_M_CSharp
             //    }
             //}
         }
+
+        private void frm_Spielfeld_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frm.Show();
+        }
+
+
+
+
 
         //private void btn_24_1_Click(object sender, EventArgs e)
         //{

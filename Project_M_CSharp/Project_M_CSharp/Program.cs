@@ -16,7 +16,8 @@ namespace Project_M_CSharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Spielfeld());
+            Application.Run(new frm_Menu());
+            //Application.Run(new frm_Spielfeld());
         }
     }
 }
