@@ -12,6 +12,7 @@ namespace Project_M_CSharp
         public Feld[] nachbarn;
         public Content content;
         public int Entfernung_zum_Ziel;
+        public bool schonGeruecktWorden;
         //Button b = new Button();
         public Feld(Content c, int distanz) : base()
         {

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CPU.cs" />
     <Compile Include="Einstellungen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +56,14 @@
     <Compile Include="Feld.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Sieg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sieg.Designer.cs">
+      <DependentUpon>Sieg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spieler.cs" />
     <Compile Include="Spielfeld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Einstellungen.resx">
       <DependentUpon>Einstellungen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sieg.resx">
+      <DependentUpon>Sieg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Spielfeld.resx">
       <DependentUpon>Spielfeld.cs</DependentUpon>

@@ -12,7 +12,7 @@ namespace Project_M_CSharp
 {
     public partial class frm_Einstellungen : Form
     {
-        Form frm;
+        public Form frm;
 
         public frm_Einstellungen(Form myFrm)
         {
@@ -27,6 +27,7 @@ namespace Project_M_CSharp
 
         private void frm_Einstellungen_Load(object sender, EventArgs e)
         {
+            
             
         }
 
@@ -48,30 +49,39 @@ namespace Project_M_CSharp
             if(rbtn_anz_s_2.Checked)
             {
                 txt_s3.Enabled = false;
-                cmb_s3.Enabled = false;
+                txt_s3.Text = "Yellow";
+                //cmb_s3.Enabled = false;
                 ckb_cpu_s3.Enabled = false;
                 txt_s4.Enabled = false;
-                cmb_s4.Enabled = false;
+                txt_s4.Text = "Blue";
+                //cmb_s4.Enabled = false;
                 ckb_cpu_s4.Enabled = false;
             }
             else if(rbtn_anz_s_3.Checked)
             {
                 txt_s3.Enabled = true;
-                cmb_s3.Enabled = true;
+                //cmb_s3.Enabled = true;
                 ckb_cpu_s3.Enabled = true;
                 txt_s4.Enabled = false;
-                cmb_s4.Enabled = false;
+                txt_s4.Text = "Blue";
+                //cmb_s4.Enabled = false;
                 ckb_cpu_s4.Enabled = false;
             }
             else
             {
                 txt_s3.Enabled = true;
-                cmb_s3.Enabled = true;
+                //cmb_s3.Enabled = true;
                 ckb_cpu_s3.Enabled = true;
                 txt_s4.Enabled = true;
-                cmb_s4.Enabled = true;
+                //cmb_s4.Enabled = true;
                 ckb_cpu_s4.Enabled = true;
             }
+        }
+
+        private void btn_zurueck_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm.Show();
         }
     }
 }
