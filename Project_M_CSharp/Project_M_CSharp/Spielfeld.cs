@@ -531,7 +531,7 @@ namespace Project_M_CSharp
                                 nextPlayer(yourTurn);
                             }
                         }
-                        else if ((int)myfield.content <= (PlayerAnzahl -1))
+                        else if (myfield.content == yourTurn.spielerFarbe)
                         {
                             start = myfield;
                             rueckOptionenPropagiere(myfield, rueckzahl, null, myfield.content);
