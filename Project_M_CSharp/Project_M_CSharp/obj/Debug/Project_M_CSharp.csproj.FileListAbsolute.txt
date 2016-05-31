@@ -21,3 +21,4 @@ C:\Users\Lori\Desktop\Uni\8. Semester (SS 2016)\Bachelorarbeit\C#\Project_M_CSha
 C:\Users\Nikolas\Desktop\Bachelorzeugs\Github\C#\Project_M_CSharp\Project_M_CSharp\obj\Debug\Project_M_CSharp.frm_Einstellungen.resources
 C:\Users\Nikolas\Desktop\Bachelorzeugs\Github\C#\Project_M_CSharp\Project_M_CSharp\obj\Debug\Project_M_CSharp.frm_Menu.resources
 C:\Users\Nikolas\Desktop\Bachelorzeugs\Github\C#\Project_M_CSharp\Project_M_CSharp\obj\Debug\Project_M_CSharp.frm_Sieg.resources
+C:\Users\Lori\Desktop\Uni\8. Semester (SS 2016)\Bachelorarbeit\C#\Project_M_CSharp\Project_M_CSharp\obj\Debug\Project_M_CSharp.frm_Sieg.resources

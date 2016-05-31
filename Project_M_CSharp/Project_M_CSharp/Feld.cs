@@ -14,11 +14,23 @@ namespace Project_M_CSharp
         public int Entfernung_zum_Ziel;
         public bool schonGeruecktWorden;
         //Button b = new Button();
-        public Feld(Content c, int distanz) : base()
+
+        //public Feld() : base()
+        //{
+
+        //}
+
+        //public Feld(Content c, int distanz) : base()
+        //{
+        //    content = c;
+        //    Entfernung_zum_Ziel = distanz;
+        //    //Entfern_zum_Ziel = (int)this.Tag;   //später noch anpassen und im Konstruktor eingeben ohne Tag-Feld
+        //}
+
+        public void setAttributes(Content c, int distanz)
         {
             content = c;
             Entfernung_zum_Ziel = distanz;
-            //Entfern_zum_Ziel = (int)this.Tag;   //später noch anpassen und im Konstruktor eingeben ohne Tag-Feld
         }
 
         public void setNachbar (params Feld[] ButtonList)
@@ -32,7 +44,7 @@ namespace Project_M_CSharp
             YELLOW,
             BLUE,
             BLOCK,
-            EMPTY,
+            BLACK,
             GOAL
         };
     }
