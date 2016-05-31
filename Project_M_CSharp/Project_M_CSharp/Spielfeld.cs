@@ -224,6 +224,7 @@ namespace Project_M_CSharp
             schongewuerfelt = true;
             btn_aussetzen.Enabled = true;
             btn_wuerfeln.Enabled = false;
+            lbl_anleitungen.Text = "Spieler " + yourTurn.name + " Sie müssen rücken. Klicken Sie dafür eine ihrer Figuren an und anschließend auf ein markiertes Feld.";
         }
 
         //private void btn_40_red_1_Click(object sender, EventArgs e)
@@ -395,6 +396,7 @@ namespace Project_M_CSharp
             {
                 case Feld.Content.BLOCK:
                     schonBlockGesetzt = true;
+                    lbl_anleitungen.Text = "Spieler " + yourTurn.name + " Sie müssen einen Block setzen. Die unterste Reihe ist tabu.";
                     break;
                 case Feld.Content.RED:
                     schlagen(Ursprungscontent);
@@ -500,6 +502,7 @@ namespace Project_M_CSharp
                 //}
             }
             //schongerueckt = false;
+            lbl_anleitungen.Text = "Spieler " + yourTurn.name + " Sie müssen würfeln.";
             spielerButtonsDisablen();
         }
 

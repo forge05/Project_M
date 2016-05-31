@@ -23,6 +23,7 @@ namespace Project_M_CSharp
             base.Dispose(disposing);
         }
 
+
         //private void initFelder()
         //{
         //    this.btn_8_1 = new Feld(Feld.Content.EMPTY, 8);
@@ -568,11 +569,11 @@ namespace Project_M_CSharp
             btn_40_blue_4.setNachbar(btn_39_4);
             btn_40_blue_5.setNachbar(btn_39_4);
 
-
             this.btn_wuerfeln = new System.Windows.Forms.Button();
             this.lbl_wurfzahl = new System.Windows.Forms.Label();
             this.pnl_alleFelder = new System.Windows.Forms.Panel();
             this.btn_aussetzen = new System.Windows.Forms.Button();
+            this.lbl_anleitungen = new System.Windows.Forms.Label();
             this.pnl_alleFelder.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2331,11 +2332,20 @@ namespace Project_M_CSharp
             this.btn_aussetzen.UseVisualStyleBackColor = true;
             this.btn_aussetzen.Click += new System.EventHandler(this.btn_aussetzen_Click);
             // 
+            // lbl_anleitungen
+            // 
+            this.lbl_anleitungen.Location = new System.Drawing.Point(248, 909);
+            this.lbl_anleitungen.Name = "lbl_anleitungen";
+            this.lbl_anleitungen.Size = new System.Drawing.Size(912, 50);
+            this.lbl_anleitungen.TabIndex = 139;
+            this.lbl_anleitungen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frm_Spielfeld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1459, 994);
+            this.Controls.Add(this.lbl_anleitungen);
             this.Controls.Add(this.btn_aussetzen);
             this.Controls.Add(this.pnl_alleFelder);
             this.Controls.Add(this.lbl_wurfzahl);
@@ -2487,6 +2497,7 @@ namespace Project_M_CSharp
         private Label lbl_wurfzahl;
         private Panel pnl_alleFelder;
         private Button btn_aussetzen;
+        private Label lbl_anleitungen;
     }
 }
 
