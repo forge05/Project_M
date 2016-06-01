@@ -83,5 +83,12 @@ namespace Project_M_CSharp
             this.Hide();
             frm.Show();
         }
+
+        private void btn_spiel_starten_Click(object sender, EventArgs e)
+        {
+            frm_Spielfeld Spiel = new frm_Spielfeld(frm, this);
+            Spiel.Show();
+            this.Hide();
+        }
     }
 }

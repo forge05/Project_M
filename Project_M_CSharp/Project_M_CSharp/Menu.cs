@@ -26,22 +26,12 @@ namespace Project_M_CSharp
 
         private void btn_neues_Spiel_Click(object sender, EventArgs e)
         {
-            frm_Spielfeld Spiel = new frm_Spielfeld(this, frm_Einstellungen);
-            //frm_Einstellungen = new frm_Einstellungen(this);
-            Spiel.Show();
-            this.Hide();
-        }
-
-        private void frm_Menu_Load(object sender, EventArgs e)
-        {
-            //this.Show();
-        }
-
-        private void btn_einstellungen_Click(object sender, EventArgs e)
-        {
+            //frm_Spielfeld Spiel = new frm_Spielfeld(this, frm_Einstellungen);
             //frm_Einstellungen = new frm_Einstellungen(this);
             frm_Einstellungen.Show();
             this.Hide();
+            //Spiel.Show();
+            //this.Hide();
         }
     }
 }

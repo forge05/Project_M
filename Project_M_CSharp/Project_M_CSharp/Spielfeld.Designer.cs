@@ -303,10 +303,8 @@ namespace Project_M_CSharp
         private void InitializeComponent()
         {
             this.btn_wuerfeln = new System.Windows.Forms.Button();
-            this.lbl_wurfzahl = new System.Windows.Forms.Label();
+            this.lbl_Wurfzahl = new System.Windows.Forms.Label();
             this.pnl_alleFelder = new System.Windows.Forms.Panel();
-            this.btn_aussetzen = new System.Windows.Forms.Button();
-            this.lbl_anleitungen = new System.Windows.Forms.Label();
             this.btn_blue_40_2 = new Project_M_CSharp.Startfeld();
             this.btn_blue_40_3 = new Project_M_CSharp.Startfeld();
             this.btn_blue_40_4 = new Project_M_CSharp.Startfeld();
@@ -439,6 +437,9 @@ namespace Project_M_CSharp
             this.btn_7_1 = new Project_M_CSharp.Feld();
             this.btn_8_1 = new Project_M_CSharp.Feld();
             this.btn_9_1 = new Project_M_CSharp.Feld();
+            this.btn_aussetzen = new System.Windows.Forms.Button();
+            this.lbl_Anleitungen = new System.Windows.Forms.Label();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.pnl_alleFelder.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -453,15 +454,15 @@ namespace Project_M_CSharp
             this.btn_wuerfeln.UseVisualStyleBackColor = true;
             this.btn_wuerfeln.Click += new System.EventHandler(this.btn_wuerfeln_Click);
             // 
-            // lbl_wurfzahl
+            // lbl_Wurfzahl
             // 
-            this.lbl_wurfzahl.AutoSize = true;
-            this.lbl_wurfzahl.Location = new System.Drawing.Point(130, 753);
-            this.lbl_wurfzahl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_wurfzahl.Name = "lbl_wurfzahl";
-            this.lbl_wurfzahl.Size = new System.Drawing.Size(13, 13);
-            this.lbl_wurfzahl.TabIndex = 136;
-            this.lbl_wurfzahl.Text = "0";
+            this.lbl_Wurfzahl.AutoSize = true;
+            this.lbl_Wurfzahl.Location = new System.Drawing.Point(130, 753);
+            this.lbl_Wurfzahl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Wurfzahl.Name = "lbl_Wurfzahl";
+            this.lbl_Wurfzahl.Size = new System.Drawing.Size(13, 13);
+            this.lbl_Wurfzahl.TabIndex = 136;
+            this.lbl_Wurfzahl.Text = "0";
             // 
             // pnl_alleFelder
             // 
@@ -602,27 +603,6 @@ namespace Project_M_CSharp
             this.pnl_alleFelder.Name = "pnl_alleFelder";
             this.pnl_alleFelder.Size = new System.Drawing.Size(1055, 695);
             this.pnl_alleFelder.TabIndex = 137;
-            // 
-            // btn_aussetzen
-            // 
-            this.btn_aussetzen.Enabled = false;
-            this.btn_aussetzen.Location = new System.Drawing.Point(951, 739);
-            this.btn_aussetzen.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_aussetzen.Name = "btn_aussetzen";
-            this.btn_aussetzen.Size = new System.Drawing.Size(115, 37);
-            this.btn_aussetzen.TabIndex = 138;
-            this.btn_aussetzen.Text = "Aussetzen";
-            this.btn_aussetzen.UseVisualStyleBackColor = true;
-            this.btn_aussetzen.Click += new System.EventHandler(this.btn_aussetzen_Click);
-            // 
-            // lbl_anleitungen
-            // 
-            this.lbl_anleitungen.Location = new System.Drawing.Point(186, 739);
-            this.lbl_anleitungen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_anleitungen.Name = "lbl_anleitungen";
-            this.lbl_anleitungen.Size = new System.Drawing.Size(684, 41);
-            this.lbl_anleitungen.TabIndex = 139;
-            this.lbl_anleitungen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_blue_40_2
             // 
@@ -1944,15 +1924,48 @@ namespace Project_M_CSharp
             this.btn_9_1.UseVisualStyleBackColor = false;
             this.btn_9_1.Click += new System.EventHandler(this.btn_Click);
             // 
+            // btn_aussetzen
+            // 
+            this.btn_aussetzen.Enabled = false;
+            this.btn_aussetzen.Location = new System.Drawing.Point(951, 706);
+            this.btn_aussetzen.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_aussetzen.Name = "btn_aussetzen";
+            this.btn_aussetzen.Size = new System.Drawing.Size(115, 37);
+            this.btn_aussetzen.TabIndex = 138;
+            this.btn_aussetzen.Text = "Aussetzen";
+            this.btn_aussetzen.UseVisualStyleBackColor = true;
+            this.btn_aussetzen.Click += new System.EventHandler(this.btn_aussetzen_Click);
+            // 
+            // lbl_Anleitungen
+            // 
+            this.lbl_Anleitungen.Location = new System.Drawing.Point(186, 739);
+            this.lbl_Anleitungen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Anleitungen.Name = "lbl_Anleitungen";
+            this.lbl_Anleitungen.Size = new System.Drawing.Size(684, 41);
+            this.lbl_Anleitungen.TabIndex = 139;
+            this.lbl_Anleitungen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.Location = new System.Drawing.Point(951, 747);
+            this.btn_reset.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(115, 37);
+            this.btn_reset.TabIndex = 140;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
             // frm_Spielfeld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 808);
-            this.Controls.Add(this.lbl_anleitungen);
+            this.Controls.Add(this.btn_reset);
+            this.Controls.Add(this.lbl_Anleitungen);
             this.Controls.Add(this.btn_aussetzen);
             this.Controls.Add(this.pnl_alleFelder);
-            this.Controls.Add(this.lbl_wurfzahl);
+            this.Controls.Add(this.lbl_Wurfzahl);
             this.Controls.Add(this.btn_wuerfeln);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_Spielfeld";
@@ -1966,10 +1979,10 @@ namespace Project_M_CSharp
 
         #endregion
         private Button btn_wuerfeln;
-        private Label lbl_wurfzahl;
+        private Label lbl_Wurfzahl;
         private Panel pnl_alleFelder;
         private Button btn_aussetzen;
-        private Label lbl_anleitungen;
+        private Label lbl_Anleitungen;
         private Feld btn_9_1;
         private Feld btn_11_2;
         private Feld btn_12_2;
@@ -2102,6 +2115,7 @@ namespace Project_M_CSharp
         private Startfeld btn_yellow_40_4;
         private Startfeld btn_yellow_40_5;
         private Startfeld btn_yellow_40_1;
+        private Button btn_reset;
     }
 }
 

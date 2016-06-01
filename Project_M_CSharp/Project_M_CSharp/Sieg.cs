@@ -26,8 +26,9 @@ namespace Project_M_CSharp
 
         private void btn_okay_Click(object sender, EventArgs e)
         {
-            spielfeld.Close();
-            menu.Show();
+            //spielfeld.Close();
+            //menu.Show();
+            spielfeld.Show();
             this.Close();
             
         }

@@ -9,33 +9,31 @@ namespace Project_M_CSharp
 {
     class Feld : Button
     {
-        public Feld[] nachbarn;
-        public Content content;
-        public int Entfernung_zum_Ziel;
-        public bool schonGeruecktWorden;
-        //Button b = new Button();
+        public Feld[] Nachbarn;
+        public Content Inhalt;
+        public int EntfernungZumZiel;
+        //public bool SchonGeruecktWorden;
 
-        //public Feld() : base()
+        //public Feld() : base()    //Default-Konstruktor implizit vorhanden (Button)
         //{
 
         //}
 
-        //public Feld(Content c, int distanz) : base()
+        //public Feld(Content c, int distanz) : base()  //können wir nicht verwenden, wegen des Designers
         //{
         //    content = c;
         //    Entfernung_zum_Ziel = distanz;
-        //    //Entfern_zum_Ziel = (int)this.Tag;   //später noch anpassen und im Konstruktor eingeben ohne Tag-Feld
         //}
 
         public void setAttributes(Content c, int distanz)
         {
-            content = c;
-            Entfernung_zum_Ziel = distanz;
+            Inhalt = c;
+            EntfernungZumZiel = distanz;
         }
 
         public void setNachbar (params Feld[] ButtonList)
         {
-            nachbarn = ButtonList;
+            Nachbarn = ButtonList;
         }
 
         public enum Content { 
