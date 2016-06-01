@@ -39,9 +39,10 @@ namespace Project_M_CSharp
             frm_Menue = myFrm;
             frm_Einstellungen = myFrm_E;
             AllePlayer = new List<Player>();
+            InitializeComponent();
             erstellePlayer();
             Iterator = AllePlayer.GetEnumerator();
-            InitializeComponent();
+            //InitializeComponent();
             setAttributes();
             setNeighbors();
             nextPlayer();
@@ -361,6 +362,15 @@ namespace Project_M_CSharp
             bool CPU3 = false;
             bool CPU4 = false;
 
+            //Startfelder außerhalb des Designers ausgrauen
+            foreach(Control c in pnl_alleFelder.Controls)
+            {
+                if (c is Startfeld)
+                {
+                    c.BackColor = Color.DarkGray;
+                }
+            }
+
             foreach (Control gb in frm_Einstellungen.Controls)
             {
                 if (gb is GroupBox)
@@ -437,56 +447,60 @@ namespace Project_M_CSharp
             }
             if (CPU1)
             {
-                Player1 = new CPU(Playername1, Feld.Content.RED);
+                Player1 = new CPU(Playername1, Feld.Content.RED, btn_red_40_1, btn_red_40_2, btn_red_40_3, btn_red_40_4, btn_red_40_5);
             }
             else
             {
-                Player1 = new Spieler(Playername1, Feld.Content.RED);
+                Player1 = new Spieler(Playername1, Feld.Content.RED, btn_red_40_1, btn_red_40_2, btn_red_40_3, btn_red_40_4, btn_red_40_5);
             }
             AllePlayer.Add(Player1); //Player 1 wird der Playerliste hinzugefügt
+            lbl_Player1.Text = Playername1;
             if (CPU2)
             {
-                Player2 = new CPU(Playername2, Feld.Content.GREEN);
+                Player2 = new CPU(Playername2, Feld.Content.GREEN, btn_green_40_1, btn_green_40_2, btn_green_40_3, btn_green_40_4, btn_green_40_5);
             }
             else
             {
-                Player2 = new Spieler(Playername2, Feld.Content.GREEN);
+                Player2 = new Spieler(Playername2, Feld.Content.GREEN, btn_green_40_1, btn_green_40_2, btn_green_40_3, btn_green_40_4, btn_green_40_5);
             }
             AllePlayer.Add(Player2); //Player 2 wird der Playerliste hinzugefügt
+            lbl_Player2.Text = Playername2;
             if (PlayerAnzahl > 2)
             {
                 if (CPU3)
                 {
-                    Player3 = new CPU(Playername3, Feld.Content.YELLOW);
+                    Player3 = new CPU(Playername3, Feld.Content.YELLOW, btn_yellow_40_1, btn_yellow_40_2, btn_yellow_40_3, btn_yellow_40_4, btn_yellow_40_5);
                 }
                 else
                 {
-                    Player3 = new Spieler(Playername3, Feld.Content.YELLOW);
+                    Player3 = new Spieler(Playername3, Feld.Content.YELLOW, btn_yellow_40_1, btn_yellow_40_2, btn_yellow_40_3, btn_yellow_40_4, btn_yellow_40_5);
                 }
                 AllePlayer.Add(Player3); //Player 3 wird der Playerliste hinzugefügt
+                lbl_Player3.Text = Playername3;
+                //Player3 einfärben
+                foreach (Startfeld sf in Player3.StartfeldArray)
+                {
+                    sf.BackColor = getColorFromContent(Player3.spielerFarbe);
+                }
                 if (PlayerAnzahl > 3)
                 {
                     if (CPU4)
                     {
-                        Player4 = new CPU(Playername4, Feld.Content.BLUE);
+                        Player4 = new CPU(Playername4, Feld.Content.BLUE, btn_blue_40_1, btn_blue_40_2, btn_blue_40_3, btn_blue_40_4, btn_blue_40_5);
                     }
                     else
                     {
-                        Player4 = new Spieler(Playername4, Feld.Content.BLUE);
+                        Player4 = new Spieler(Playername4, Feld.Content.BLUE, btn_blue_40_1, btn_blue_40_2, btn_blue_40_3, btn_blue_40_4, btn_blue_40_5);
                     }
                     AllePlayer.Add(Player4); //Player 4 wird der Playerliste hinzugefügt
+                    lbl_Player4.Text = Playername4;
+                    //Player 4 einfärben
+                    foreach (Startfeld sf in Player4.StartfeldArray)
+                    {
+                        sf.BackColor = getColorFromContent(Player4.spielerFarbe);
+                    }
                 }
-                else
-                {
-                    //Player 4 ausgrauen
-                }
-
             }
-            else
-            {
-                //Player3 und 4 ausgrauen
-            }
-
             //RadioButton könnte noch ausgelesen werden, um festzulegen wer anfangen soll
         }
 

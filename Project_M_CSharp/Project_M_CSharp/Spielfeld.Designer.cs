@@ -440,15 +440,19 @@ namespace Project_M_CSharp
             this.btn_aussetzen = new System.Windows.Forms.Button();
             this.lbl_Anleitungen = new System.Windows.Forms.Label();
             this.btn_reset = new System.Windows.Forms.Button();
+            this.lbl_Player1 = new System.Windows.Forms.Label();
+            this.lbl_Player2 = new System.Windows.Forms.Label();
+            this.lbl_Player3 = new System.Windows.Forms.Label();
+            this.lbl_Player4 = new System.Windows.Forms.Label();
             this.pnl_alleFelder.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_wuerfeln
             // 
-            this.btn_wuerfeln.Location = new System.Drawing.Point(11, 741);
+            this.btn_wuerfeln.Location = new System.Drawing.Point(113, 747);
             this.btn_wuerfeln.Margin = new System.Windows.Forms.Padding(2);
             this.btn_wuerfeln.Name = "btn_wuerfeln";
-            this.btn_wuerfeln.Size = new System.Drawing.Size(115, 37);
+            this.btn_wuerfeln.Size = new System.Drawing.Size(74, 41);
             this.btn_wuerfeln.TabIndex = 135;
             this.btn_wuerfeln.Text = "würfeln";
             this.btn_wuerfeln.UseVisualStyleBackColor = true;
@@ -457,7 +461,7 @@ namespace Project_M_CSharp
             // lbl_Wurfzahl
             // 
             this.lbl_Wurfzahl.AutoSize = true;
-            this.lbl_Wurfzahl.Location = new System.Drawing.Point(130, 753);
+            this.lbl_Wurfzahl.Location = new System.Drawing.Point(197, 759);
             this.lbl_Wurfzahl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Wurfzahl.Name = "lbl_Wurfzahl";
             this.lbl_Wurfzahl.Size = new System.Drawing.Size(13, 13);
@@ -1927,18 +1931,18 @@ namespace Project_M_CSharp
             // btn_aussetzen
             // 
             this.btn_aussetzen.Enabled = false;
-            this.btn_aussetzen.Location = new System.Drawing.Point(951, 706);
+            this.btn_aussetzen.Location = new System.Drawing.Point(23, 747);
             this.btn_aussetzen.Margin = new System.Windows.Forms.Padding(2);
             this.btn_aussetzen.Name = "btn_aussetzen";
-            this.btn_aussetzen.Size = new System.Drawing.Size(115, 37);
+            this.btn_aussetzen.Size = new System.Drawing.Size(74, 41);
             this.btn_aussetzen.TabIndex = 138;
-            this.btn_aussetzen.Text = "Aussetzen";
+            this.btn_aussetzen.Text = "aussetzen";
             this.btn_aussetzen.UseVisualStyleBackColor = true;
             this.btn_aussetzen.Click += new System.EventHandler(this.btn_aussetzen_Click);
             // 
             // lbl_Anleitungen
             // 
-            this.lbl_Anleitungen.Location = new System.Drawing.Point(186, 739);
+            this.lbl_Anleitungen.Location = new System.Drawing.Point(223, 747);
             this.lbl_Anleitungen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Anleitungen.Name = "lbl_Anleitungen";
             this.lbl_Anleitungen.Size = new System.Drawing.Size(684, 41);
@@ -1947,20 +1951,56 @@ namespace Project_M_CSharp
             // 
             // btn_reset
             // 
-            this.btn_reset.Location = new System.Drawing.Point(951, 747);
+            this.btn_reset.Location = new System.Drawing.Point(1006, 747);
             this.btn_reset.Margin = new System.Windows.Forms.Padding(2);
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(115, 37);
+            this.btn_reset.Size = new System.Drawing.Size(60, 41);
             this.btn_reset.TabIndex = 140;
-            this.btn_reset.Text = "Reset";
+            this.btn_reset.Text = "reset";
             this.btn_reset.UseVisualStyleBackColor = true;
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // lbl_Player1
+            // 
+            this.lbl_Player1.Location = new System.Drawing.Point(73, 718);
+            this.lbl_Player1.Name = "lbl_Player1";
+            this.lbl_Player1.Size = new System.Drawing.Size(183, 21);
+            this.lbl_Player1.TabIndex = 141;
+            this.lbl_Player1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_Player2
+            // 
+            this.lbl_Player2.Location = new System.Drawing.Point(321, 718);
+            this.lbl_Player2.Name = "lbl_Player2";
+            this.lbl_Player2.Size = new System.Drawing.Size(183, 21);
+            this.lbl_Player2.TabIndex = 142;
+            this.lbl_Player2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_Player3
+            // 
+            this.lbl_Player3.Location = new System.Drawing.Point(569, 718);
+            this.lbl_Player3.Name = "lbl_Player3";
+            this.lbl_Player3.Size = new System.Drawing.Size(183, 21);
+            this.lbl_Player3.TabIndex = 143;
+            this.lbl_Player3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_Player4
+            // 
+            this.lbl_Player4.Location = new System.Drawing.Point(817, 718);
+            this.lbl_Player4.Name = "lbl_Player4";
+            this.lbl_Player4.Size = new System.Drawing.Size(183, 21);
+            this.lbl_Player4.TabIndex = 144;
+            this.lbl_Player4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frm_Spielfeld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 808);
+            this.Controls.Add(this.lbl_Player4);
+            this.Controls.Add(this.lbl_Player3);
+            this.Controls.Add(this.lbl_Player2);
+            this.Controls.Add(this.lbl_Player1);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.lbl_Anleitungen);
             this.Controls.Add(this.btn_aussetzen);
@@ -2116,6 +2156,10 @@ namespace Project_M_CSharp
         private Startfeld btn_yellow_40_5;
         private Startfeld btn_yellow_40_1;
         private Button btn_reset;
+        private Label lbl_Player1;
+        private Label lbl_Player2;
+        private Label lbl_Player3;
+        private Label lbl_Player4;
     }
 }
 

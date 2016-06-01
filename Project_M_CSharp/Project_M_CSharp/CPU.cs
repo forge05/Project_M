@@ -8,7 +8,7 @@ namespace Project_M_CSharp
 {
     class CPU : Player
     {
-        public CPU(string CPU_Name, Feld.Content CPU_Farbe)
+        public CPU(string CPU_Name, Feld.Content CPU_Farbe, params Startfeld[] startfelder_Array) : base(startfelder_Array)
         {
             name = CPU_Name;
             spielerFarbe = CPU_Farbe;
