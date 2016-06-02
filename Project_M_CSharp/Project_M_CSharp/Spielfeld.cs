@@ -304,7 +304,7 @@ namespace Project_M_CSharp
             btn_38_7.setNachbar(btn_37_4, btn_39_4);
             btn_38_8.setNachbar(btn_37_5, btn_39_4);
             btn_39_1.setNachbar(btn_38_1, btn_38_2); //wir lassen die 39er-Felder bewusst 
-            btn_39_2.setNachbar(btn_38_3, btn_38_4); //nicht ihre Startfeldnachbar
+            btn_39_2.setNachbar(btn_38_3, btn_38_4); //nicht ihre Startfeldnachbarn
             btn_39_3.setNachbar(btn_38_5, btn_38_6); //kennen, weil man nicht zurück in die
             btn_39_4.setNachbar(btn_38_7, btn_38_8); //Startfelder rücken darf
             btn_red_40_1.setNachbar(btn_39_1);
@@ -349,7 +349,7 @@ namespace Project_M_CSharp
                 feld.BackColor = getColorFromContent(feld.Inhalt);
             }
             //Buttons disablen
-            spielerButtonsDisablen();
+            playerButtonsDisablen();
             //Actionbuttons zurücksetzen
             btn_wuerfeln.Enabled = true;
             btn_aussetzen.Enabled = false;
@@ -535,7 +535,6 @@ namespace Project_M_CSharp
                             propagiereRueckOptionen(nachbar, Spruenge - 1, AktuellesFeld, PlayerContent);
                             //}
                         }
-
                     }
                     //}
                 }
@@ -578,7 +577,7 @@ namespace Project_M_CSharp
             }
         }
 
-        private void spielerButtonsDisablen()
+        private void playerButtonsDisablen()
         {
             foreach (Feld f in pnl_alleFelder.Controls)
             {
@@ -665,12 +664,10 @@ namespace Project_M_CSharp
 
         private void gewinnen()
         {
-            string gewinner = "";
-            gewinner = YourTurn.name;
             SomeoneWon = true;
             btn_wuerfeln.Enabled = false;
             btn_aussetzen.Enabled = false;
-            frm_Sieg siegesNachricht = new frm_Sieg(this, frm_Menue, gewinner);
+            frm_Sieg siegesNachricht = new frm_Sieg(this, frm_Menue, YourTurn.name);
             siegesNachricht.Show();
             this.Hide();
         }
@@ -716,7 +713,7 @@ namespace Project_M_CSharp
             lbl_Wurfzahl.Text = "";
             SchonGewuerfelt = false;
 
-            spielerButtonsDisablen();
+            playerButtonsDisablen();
         }
 
         private void btn_Click(object sender, EventArgs e)
