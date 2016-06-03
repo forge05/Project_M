@@ -333,6 +333,7 @@ namespace Project_M_CSharp
         {
             setAttributes();
             //booleans zurücksetzen
+            SomeoneWon = false;
             BlockZuSetzen = false;
             SchonGewuerfelt = false;
             //neu zeichnen
