@@ -540,12 +540,9 @@ namespace Project_M_CSharp
                     //}
                 }
             }
-            else
+            else if (AktuellesFeld.Inhalt != PlayerContent)
             {
-                if (AktuellesFeld.Inhalt != PlayerContent)
-                {
-                    AktuellesFeld.BackColor = Color.Brown;
-                }
+                AktuellesFeld.BackColor = Color.Brown;
                 if (AktuellesFeld.Inhalt == Feld.Content.BLOCK)
                 {
                     AktuellesFeld.Text = "BLOCK";
@@ -555,11 +552,14 @@ namespace Project_M_CSharp
                     AktuellesFeld.Text = "Gegner";
                     AktuellesFeld.ForeColor = getColorFromContent(AktuellesFeld.Inhalt);
                 }
-                if (AktuellesFeld.Inhalt == Feld.Content.GOAL)
+                else if (AktuellesFeld.Inhalt == Feld.Content.GOAL)
                 {
                     AktuellesFeld.Text = "Ziel!";
                 }
             }
+                
+                
+               
         }
 
         private void rueckOptionenZuruecksetzen()
@@ -638,15 +638,9 @@ namespace Project_M_CSharp
 
             switch (Ursprungscontent)
             {
-                case Feld.Content.RED:
-                    schlagen(Ursprungscontent);
-                    break;
-                case Feld.Content.GREEN:
-                    schlagen(Ursprungscontent);
-                    break;
-                case Feld.Content.YELLOW:
-                    schlagen(Ursprungscontent);
-                    break;
+                case Feld.Content.RED:      //fallthrough
+                case Feld.Content.GREEN:    //fallthrough
+                case Feld.Content.YELLOW:   //fallthrough
                 case Feld.Content.BLUE:
                     schlagen(Ursprungscontent);
                     break;
@@ -742,13 +736,10 @@ namespace Project_M_CSharp
                         propagiereRueckOptionen(myField, Wurfzahl, null, myField.Inhalt);
                     }
                 }
-                else
+                else if (myField.Inhalt == Feld.Content.BLACK && myField.EntfernungZumZiel <= 36)
                 {
-                    if (myField.Inhalt == Feld.Content.BLACK && myField.EntfernungZumZiel <= 36)
-                    {
-                        blockieren(myField);                    //blöcke dürfen nicht in die unterste reihe!!!!!  mouseOver Effekt
-                        nextPlayer();
-                    }
+                    blockieren(myField);                    //blöcke dürfen nicht in die unterste reihe!!!!!  mouseOver Effekt
+                    nextPlayer();
                 }
             }
         }
