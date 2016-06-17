@@ -73,7 +73,9 @@ namespace Project_M_CSharp
             this.Controls.Add(this.btn_okay);
             this.Controls.Add(this.lbl_gewinner);
             this.Controls.Add(this.lbl_nachricht);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frm_Sieg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sieg";
             this.ResumeLayout(false);
             this.PerformLayout();
