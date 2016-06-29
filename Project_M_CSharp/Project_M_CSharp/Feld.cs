@@ -12,19 +12,7 @@ namespace Project_M_CSharp
         public Feld[] Nachbarn;
         public Content Inhalt;
         public int EntfernungZumZiel;
-        //public bool SchonGeruecktWorden;
-
-        //public Feld() : base()    //Default-Konstruktor implizit vorhanden (Button)
-        //{
-
-        //}
-
-        //public Feld(Content c, int distanz) : base()  //können wir nicht verwenden, wegen des Designers
-        //{
-        //    content = c;
-        //    Entfernung_zum_Ziel = distanz;
-        //}
-
+        
         public void setAttributes(Content c, int distanz)
         {
             Inhalt = c;

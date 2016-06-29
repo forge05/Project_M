@@ -34,11 +34,6 @@
             this.rbtn_anz_s_3 = new System.Windows.Forms.RadioButton();
             this.rbtn_anz_s_4 = new System.Windows.Forms.RadioButton();
             this.gb_s_setup = new System.Windows.Forms.GroupBox();
-            this.gb_start_player = new System.Windows.Forms.GroupBox();
-            this.rbtn_beginn_4 = new System.Windows.Forms.RadioButton();
-            this.rbtn_beginn_3 = new System.Windows.Forms.RadioButton();
-            this.rbtn_beginn_2 = new System.Windows.Forms.RadioButton();
-            this.rbtn_beginn_1 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,16 +53,21 @@
             this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.btn_zurueck = new System.Windows.Forms.Button();
             this.btn_spiel_starten = new System.Windows.Forms.Button();
+            this.rbtn_beginn_1 = new System.Windows.Forms.RadioButton();
+            this.rbtn_beginn_2 = new System.Windows.Forms.RadioButton();
+            this.rbtn_beginn_3 = new System.Windows.Forms.RadioButton();
+            this.rbtn_beginn_4 = new System.Windows.Forms.RadioButton();
+            this.gb_start_player = new System.Windows.Forms.GroupBox();
             this.gb_s_setup.SuspendLayout();
-            this.gb_start_player.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.gb_start_player.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbtn_anz_s_2
             // 
             this.rbtn_anz_s_2.AutoSize = true;
             this.rbtn_anz_s_2.Location = new System.Drawing.Point(241, 55);
-            this.rbtn_anz_s_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_anz_s_2.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_anz_s_2.Name = "rbtn_anz_s_2";
             this.rbtn_anz_s_2.Size = new System.Drawing.Size(37, 21);
             this.rbtn_anz_s_2.TabIndex = 0;
@@ -88,7 +88,7 @@
             // txt_s1
             // 
             this.txt_s1.Location = new System.Drawing.Point(123, 134);
-            this.txt_s1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_s1.Margin = new System.Windows.Forms.Padding(4);
             this.txt_s1.Name = "txt_s1";
             this.txt_s1.Size = new System.Drawing.Size(132, 22);
             this.txt_s1.TabIndex = 2;
@@ -98,7 +98,7 @@
             // 
             this.rbtn_anz_s_3.AutoSize = true;
             this.rbtn_anz_s_3.Location = new System.Drawing.Point(291, 55);
-            this.rbtn_anz_s_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_anz_s_3.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_anz_s_3.Name = "rbtn_anz_s_3";
             this.rbtn_anz_s_3.Size = new System.Drawing.Size(37, 21);
             this.rbtn_anz_s_3.TabIndex = 3;
@@ -111,7 +111,7 @@
             this.rbtn_anz_s_4.AutoSize = true;
             this.rbtn_anz_s_4.Checked = true;
             this.rbtn_anz_s_4.Location = new System.Drawing.Point(340, 55);
-            this.rbtn_anz_s_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbtn_anz_s_4.Margin = new System.Windows.Forms.Padding(4);
             this.rbtn_anz_s_4.Name = "rbtn_anz_s_4";
             this.rbtn_anz_s_4.Size = new System.Drawing.Size(37, 21);
             this.rbtn_anz_s_4.TabIndex = 4;
@@ -144,70 +144,13 @@
             this.gb_s_setup.Controls.Add(this.txt_s2);
             this.gb_s_setup.Controls.Add(this.txt_s1);
             this.gb_s_setup.Location = new System.Drawing.Point(44, 59);
-            this.gb_s_setup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_s_setup.Margin = new System.Windows.Forms.Padding(4);
             this.gb_s_setup.Name = "gb_s_setup";
-            this.gb_s_setup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_s_setup.Padding = new System.Windows.Forms.Padding(4);
             this.gb_s_setup.Size = new System.Drawing.Size(593, 292);
             this.gb_s_setup.TabIndex = 10;
             this.gb_s_setup.TabStop = false;
             this.gb_s_setup.Text = "Spieler-Setup";
-            // 
-            // gb_start_player
-            // 
-            this.gb_start_player.Controls.Add(this.rbtn_beginn_4);
-            this.gb_start_player.Controls.Add(this.rbtn_beginn_3);
-            this.gb_start_player.Controls.Add(this.rbtn_beginn_2);
-            this.gb_start_player.Controls.Add(this.rbtn_beginn_1);
-            this.gb_start_player.Location = new System.Drawing.Point(416, 94);
-            this.gb_start_player.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gb_start_player.Name = "gb_start_player";
-            this.gb_start_player.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gb_start_player.Size = new System.Drawing.Size(100, 162);
-            this.gb_start_player.TabIndex = 23;
-            this.gb_start_player.TabStop = false;
-            this.gb_start_player.Text = "Wer soll beginnen?";
-            // 
-            // rbtn_beginn_4
-            // 
-            this.rbtn_beginn_4.AutoSize = true;
-            this.rbtn_beginn_4.Location = new System.Drawing.Point(41, 135);
-            this.rbtn_beginn_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbtn_beginn_4.Name = "rbtn_beginn_4";
-            this.rbtn_beginn_4.Size = new System.Drawing.Size(17, 16);
-            this.rbtn_beginn_4.TabIndex = 3;
-            this.rbtn_beginn_4.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_beginn_3
-            // 
-            this.rbtn_beginn_3.AutoSize = true;
-            this.rbtn_beginn_3.Location = new System.Drawing.Point(41, 108);
-            this.rbtn_beginn_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbtn_beginn_3.Name = "rbtn_beginn_3";
-            this.rbtn_beginn_3.Size = new System.Drawing.Size(17, 16);
-            this.rbtn_beginn_3.TabIndex = 2;
-            this.rbtn_beginn_3.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_beginn_2
-            // 
-            this.rbtn_beginn_2.AutoSize = true;
-            this.rbtn_beginn_2.Location = new System.Drawing.Point(41, 68);
-            this.rbtn_beginn_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbtn_beginn_2.Name = "rbtn_beginn_2";
-            this.rbtn_beginn_2.Size = new System.Drawing.Size(17, 16);
-            this.rbtn_beginn_2.TabIndex = 1;
-            this.rbtn_beginn_2.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_beginn_1
-            // 
-            this.rbtn_beginn_1.AutoSize = true;
-            this.rbtn_beginn_1.Checked = true;
-            this.rbtn_beginn_1.Location = new System.Drawing.Point(41, 39);
-            this.rbtn_beginn_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rbtn_beginn_1.Name = "rbtn_beginn_1";
-            this.rbtn_beginn_1.Size = new System.Drawing.Size(17, 16);
-            this.rbtn_beginn_1.TabIndex = 0;
-            this.rbtn_beginn_1.TabStop = true;
-            this.rbtn_beginn_1.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -253,7 +196,7 @@
             // 
             this.ckb_cpu_s4.AutoSize = true;
             this.ckb_cpu_s4.Location = new System.Drawing.Point(340, 235);
-            this.ckb_cpu_s4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckb_cpu_s4.Margin = new System.Windows.Forms.Padding(4);
             this.ckb_cpu_s4.Name = "ckb_cpu_s4";
             this.ckb_cpu_s4.Size = new System.Drawing.Size(58, 21);
             this.ckb_cpu_s4.TabIndex = 18;
@@ -264,7 +207,7 @@
             // 
             this.ckb_cpu_s3.AutoSize = true;
             this.ckb_cpu_s3.Location = new System.Drawing.Point(340, 202);
-            this.ckb_cpu_s3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckb_cpu_s3.Margin = new System.Windows.Forms.Padding(4);
             this.ckb_cpu_s3.Name = "ckb_cpu_s3";
             this.ckb_cpu_s3.Size = new System.Drawing.Size(58, 21);
             this.ckb_cpu_s3.TabIndex = 17;
@@ -275,7 +218,7 @@
             // 
             this.ckb_cpu_s2.AutoSize = true;
             this.ckb_cpu_s2.Location = new System.Drawing.Point(340, 167);
-            this.ckb_cpu_s2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckb_cpu_s2.Margin = new System.Windows.Forms.Padding(4);
             this.ckb_cpu_s2.Name = "ckb_cpu_s2";
             this.ckb_cpu_s2.Size = new System.Drawing.Size(58, 21);
             this.ckb_cpu_s2.TabIndex = 16;
@@ -316,7 +259,7 @@
             // 
             this.ckb_cpu_s1.AutoSize = true;
             this.ckb_cpu_s1.Location = new System.Drawing.Point(340, 135);
-            this.ckb_cpu_s1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckb_cpu_s1.Margin = new System.Windows.Forms.Padding(4);
             this.ckb_cpu_s1.Name = "ckb_cpu_s1";
             this.ckb_cpu_s1.Size = new System.Drawing.Size(58, 21);
             this.ckb_cpu_s1.TabIndex = 9;
@@ -336,7 +279,7 @@
             // txt_s4
             // 
             this.txt_s4.Location = new System.Drawing.Point(123, 233);
-            this.txt_s4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_s4.Margin = new System.Windows.Forms.Padding(4);
             this.txt_s4.Name = "txt_s4";
             this.txt_s4.Size = new System.Drawing.Size(132, 22);
             this.txt_s4.TabIndex = 5;
@@ -345,7 +288,7 @@
             // txt_s3
             // 
             this.txt_s3.Location = new System.Drawing.Point(123, 199);
-            this.txt_s3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_s3.Margin = new System.Windows.Forms.Padding(4);
             this.txt_s3.Name = "txt_s3";
             this.txt_s3.Size = new System.Drawing.Size(132, 22);
             this.txt_s3.TabIndex = 4;
@@ -354,7 +297,7 @@
             // txt_s2
             // 
             this.txt_s2.Location = new System.Drawing.Point(123, 166);
-            this.txt_s2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_s2.Margin = new System.Windows.Forms.Padding(4);
             this.txt_s2.Name = "txt_s2";
             this.txt_s2.Size = new System.Drawing.Size(132, 22);
             this.txt_s2.TabIndex = 3;
@@ -364,9 +307,9 @@
             // 
             this.groupBox2.Controls.Add(this.hScrollBar1);
             this.groupBox2.Location = new System.Drawing.Point(44, 358);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(267, 123);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
@@ -393,13 +336,70 @@
             // btn_spiel_starten
             // 
             this.btn_spiel_starten.Location = new System.Drawing.Point(460, 407);
-            this.btn_spiel_starten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_spiel_starten.Margin = new System.Windows.Forms.Padding(4);
             this.btn_spiel_starten.Name = "btn_spiel_starten";
             this.btn_spiel_starten.Size = new System.Drawing.Size(115, 53);
             this.btn_spiel_starten.TabIndex = 13;
             this.btn_spiel_starten.Text = "Spiel starten";
             this.btn_spiel_starten.UseVisualStyleBackColor = true;
             this.btn_spiel_starten.Click += new System.EventHandler(this.btn_spiel_starten_Click);
+            // 
+            // rbtn_beginn_1
+            // 
+            this.rbtn_beginn_1.AutoSize = true;
+            this.rbtn_beginn_1.Checked = true;
+            this.rbtn_beginn_1.Location = new System.Drawing.Point(41, 39);
+            this.rbtn_beginn_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtn_beginn_1.Name = "rbtn_beginn_1";
+            this.rbtn_beginn_1.Size = new System.Drawing.Size(17, 16);
+            this.rbtn_beginn_1.TabIndex = 0;
+            this.rbtn_beginn_1.TabStop = true;
+            this.rbtn_beginn_1.UseVisualStyleBackColor = true;
+            // 
+            // rbtn_beginn_2
+            // 
+            this.rbtn_beginn_2.AutoSize = true;
+            this.rbtn_beginn_2.Location = new System.Drawing.Point(41, 68);
+            this.rbtn_beginn_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtn_beginn_2.Name = "rbtn_beginn_2";
+            this.rbtn_beginn_2.Size = new System.Drawing.Size(17, 16);
+            this.rbtn_beginn_2.TabIndex = 1;
+            this.rbtn_beginn_2.UseVisualStyleBackColor = true;
+            // 
+            // rbtn_beginn_3
+            // 
+            this.rbtn_beginn_3.AutoSize = true;
+            this.rbtn_beginn_3.Location = new System.Drawing.Point(41, 108);
+            this.rbtn_beginn_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtn_beginn_3.Name = "rbtn_beginn_3";
+            this.rbtn_beginn_3.Size = new System.Drawing.Size(17, 16);
+            this.rbtn_beginn_3.TabIndex = 2;
+            this.rbtn_beginn_3.UseVisualStyleBackColor = true;
+            // 
+            // rbtn_beginn_4
+            // 
+            this.rbtn_beginn_4.AutoSize = true;
+            this.rbtn_beginn_4.Location = new System.Drawing.Point(41, 135);
+            this.rbtn_beginn_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtn_beginn_4.Name = "rbtn_beginn_4";
+            this.rbtn_beginn_4.Size = new System.Drawing.Size(17, 16);
+            this.rbtn_beginn_4.TabIndex = 3;
+            this.rbtn_beginn_4.UseVisualStyleBackColor = true;
+            // 
+            // gb_start_player
+            // 
+            this.gb_start_player.Controls.Add(this.rbtn_beginn_4);
+            this.gb_start_player.Controls.Add(this.rbtn_beginn_3);
+            this.gb_start_player.Controls.Add(this.rbtn_beginn_2);
+            this.gb_start_player.Controls.Add(this.rbtn_beginn_1);
+            this.gb_start_player.Location = new System.Drawing.Point(416, 105);
+            this.gb_start_player.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gb_start_player.Name = "gb_start_player";
+            this.gb_start_player.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gb_start_player.Size = new System.Drawing.Size(100, 162);
+            this.gb_start_player.TabIndex = 23;
+            this.gb_start_player.TabStop = false;
+            this.gb_start_player.Text = "Wer soll beginnen?";
             // 
             // frm_Einstellungen
             // 
@@ -411,17 +411,16 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb_s_setup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Einstellungen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Einstellungen";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_Einstellungen_FormClosing);
-            this.Load += new System.EventHandler(this.frm_Einstellungen_Load);
             this.gb_s_setup.ResumeLayout(false);
             this.gb_s_setup.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.gb_start_player.ResumeLayout(false);
             this.gb_start_player.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -451,12 +450,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_zurueck;
+        private System.Windows.Forms.Button btn_spiel_starten;
         private System.Windows.Forms.GroupBox gb_start_player;
         private System.Windows.Forms.RadioButton rbtn_beginn_4;
         private System.Windows.Forms.RadioButton rbtn_beginn_3;
         private System.Windows.Forms.RadioButton rbtn_beginn_2;
         private System.Windows.Forms.RadioButton rbtn_beginn_1;
-        private System.Windows.Forms.Button btn_zurueck;
-        private System.Windows.Forms.Button btn_spiel_starten;
     }
 }

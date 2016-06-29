@@ -9,6 +9,6 @@ namespace Project_M_CSharp
 {
     class Startfeld : Feld
     {
-        public bool SchonGeruecktWorden;
+        public bool SchonGeruecktWorden = false;
     }
 }
