@@ -424,8 +424,8 @@ namespace Project_M_CSharp
             btn_aussetzen.Enabled = false;
             lbl_Wurfzahl.Text = "";
             SchonGewuerfelt = false;
-
             playerButtonsDisablen();
+            rueckOptionenZuruecksetzen();
         }
 
         private void btn_Click(object sender, EventArgs e)
