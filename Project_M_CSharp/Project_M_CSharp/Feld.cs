@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Project_M_CSharp
 {
@@ -24,14 +19,8 @@ namespace Project_M_CSharp
             Nachbarn = ButtonList;
         }
 
-        public enum Content { 
-            RED,
-            GREEN,
-            YELLOW,
-            BLUE,
-            BLOCK,
-            BLACK,
-            GOAL
+        public enum Content{ 
+            RED = 1, GREEN, YELLOW, BLUE, BLOCK, BLACK, GOAL
         };
     }
 }

@@ -12,17 +12,17 @@ namespace Project_M_CSharp
 {
     public partial class frm_Einstellungen : Form
     {
-        public Form frm;
+        public Form frm_Menue;
 
         public frm_Einstellungen(Form myFrm)
         {
-            frm = myFrm;
+            frm_Menue = myFrm;
             InitializeComponent();
         }
 
         private void frm_Einstellungen_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frm.Show();
+            frm_Menue.Show();
         }
 
         private void rbtn_anz_s_2_CheckedChanged(object sender, EventArgs e)
@@ -56,12 +56,12 @@ namespace Project_M_CSharp
         private void btn_zurueck_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frm.Show();
+            frm_Menue.Show();
         }
 
         private void btn_spiel_starten_Click(object sender, EventArgs e)
         {
-            frm_Spielfeld Spiel = new frm_Spielfeld(frm, this);
+            frm_Spielfeld Spiel = new frm_Spielfeld(frm_Menue, this);
             Spiel.Show();
             this.Hide();
         }
