@@ -2,10 +2,10 @@
 {
     class Spieler : Player
     {
-        public Spieler(string spieler_Name, Feld.Content sp_Farbe, params Startfeld[] startfeld_Array) : base(startfeld_Array)
+        public Spieler(string SpielerName, Feld.Content SpielerFarbe, params Startfeld[] Startfelder) : base(Startfelder)
         {
-            name = spieler_Name;
-            spielerFarbe = sp_Farbe;
+            PlayerName = SpielerName;
+            PlayerFarbe = SpielerFarbe;
         }
     }
 }

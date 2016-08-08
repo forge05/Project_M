@@ -7,23 +7,23 @@ namespace Project_M_CSharp
 {
     public partial class frm_Spielfeld : Form
     {
+        Form frm_Menue;
+        Form frm_Einstellungen;
         int Wurfzahl;
         int PlayerAnzahl;
         string Playername1;
         string Playername2;
         string Playername3;
         string Playername4;
-        Feld Propagierender;
+        bool SchonGewuerfelt = false;
         bool BlockZuSetzen = false;
         bool SomeoneWon = false;
-        bool SchonGewuerfelt = false;
-        Form frm_Menue;
-        Form frm_Einstellungen;
         Player Player1;
         Player Player2;
         Player Player3;
         Player Player4;
         Player YourTurn;
+        Feld Propagierender;
         List<Player> AllePlayer;
         IEnumerator<Player> Iter;
         Startfeld sf;
@@ -36,44 +36,9 @@ namespace Project_M_CSharp
             InitializeComponent();
             erstellePlayer();
             Iter = AllePlayer.GetEnumerator();
-            setAttributes();
             setNeighbors();
-            nextPlayer();
-
-            //Container StartfeldContainer = new Container();   //könnte man später aus Performanzgründen einbauen
-            //foreach (Feld f in frm_Einstellungen.Controls)
-            //{
-            //    if (f is Startfeld)
-            //    {
-            //        StartfeldContainer.Add(f);
-            //    }
-            //}
-        }
-
-        private void resetSpielfeld()
-        {
             setAttributes();
-            //booleans zurücksetzen
-            SomeoneWon = false;
-            BlockZuSetzen = false;
-            SchonGewuerfelt = false;
-            //neu zeichnen
-            Iter.Reset();
             nextPlayer();
-            //Startfelder zurücksetzen und alle Felder mit ihrem neuen-alten Content zeichnen
-            foreach (Feld feld in pnl_alleFelder.Controls)
-            {
-                if ((sf = feld as Startfeld) is Startfeld)
-                {
-                    sf.SchonGeruecktWorden = false;
-                }
-                feld.BackColor = getColorFromContent(feld.Inhalt);
-            }
-            //Buttons disablen
-            playerButtonsDisablen();
-            //Actionbuttons zurücksetzen
-            btn_wuerfeln.Enabled = true;
-            btn_aussetzen.Enabled = false;
         }
 
         private void erstellePlayer()
@@ -84,14 +49,13 @@ namespace Project_M_CSharp
             bool CPU4 = false;
 
             //Startfelder außerhalb des Designers ausgrauen
-            foreach(Control c in pnl_alleFelder.Controls)
+            foreach (Control c in pnl_alleFelder.Controls)
             {
                 if (c is Startfeld)
                 {
                     c.BackColor = Color.DarkGray;           //Cast nicht notwendig, da BackColor eine Funktion von Controls
                 }
             }
-
             foreach (Control gb in frm_Einstellungen.Controls)
             {
                 if (gb is GroupBox)
@@ -166,6 +130,7 @@ namespace Project_M_CSharp
                     }
                 }
             }
+            //Player anlegen und Startfelder ggf. enablen
             if (CPU1)
             {
                 Player1 = new CPU(Playername1, Feld.Content.RED, btn_red_40_1, btn_red_40_2, btn_red_40_3, btn_red_40_4, btn_red_40_5);
@@ -201,7 +166,7 @@ namespace Project_M_CSharp
                 //Player3 einfärben
                 foreach (Startfeld sf in Player3.StartfeldArray)
                 {
-                    sf.BackColor = getColorFromContent(Player3.spielerFarbe);
+                    sf.BackColor = getColorFromContent(Player3.PlayerFarbe);
                 }
                 if (PlayerAnzahl > 3)
                 {
@@ -218,38 +183,64 @@ namespace Project_M_CSharp
                     //Player 4 einfärben
                     foreach (Startfeld sf in Player4.StartfeldArray)
                     {
-                        sf.BackColor = getColorFromContent(Player4.spielerFarbe);
+                        sf.BackColor = getColorFromContent(Player4.PlayerFarbe);
                     }
                 }
             }
-            //RadioButton könnte noch ausgelesen werden, um festzulegen wer anfangen soll
         }
 
-        private void btn_wuerfeln_Click(object sender, EventArgs e)
+        private void resetSpielfeld()
         {
-            Random Zahlenfee = new Random();
-            Wurfzahl = Zahlenfee.Next(1, 7);
-            lbl_Wurfzahl.Text = Wurfzahl.ToString();
-            SchonGewuerfelt = true;
-            btn_aussetzen.Enabled = true;
-            btn_wuerfeln.Enabled = false;
-            lbl_Anleitungen.Text = "Spieler " + YourTurn.name + 
-                " Sie müssen rücken. Klicken Sie dafür eine ihrer Figuren an und anschließend auf ein markiertes Feld.";
+            setAttributes();
+            //booleans zurücksetzen
+            SomeoneWon = false;
+            BlockZuSetzen = false;
+            SchonGewuerfelt = false;
+            //neu zeichnen
+            Iter.Reset();
+            nextPlayer();
+            //Startfelder zurücksetzen und alle Felder mit ihrem neuen-alten Content zeichnen
+            foreach (Feld feld in pnl_alleFelder.Controls)
+            {
+                if ((sf = feld as Startfeld) is Startfeld)
+                {
+                    sf.SchonGeruecktWorden = false;
+                }
+                feld.BackColor = getColorFromContent(feld.Inhalt);
+            }
+            //Buttons disablen
+            playerButtonsDisablen();
+            //Actionbuttons zurücksetzen
+            btn_wuerfeln.Enabled = true;
+            btn_aussetzen.Enabled = false;
+        }
+
+        private Color getColorFromContent(Feld.Content c)
+        {
+            switch (c)
+            {
+                case Feld.Content.RED: return Color.Red;
+                case Feld.Content.GREEN: return Color.Green;
+                case Feld.Content.YELLOW: return Color.Yellow;
+                case Feld.Content.BLUE: return Color.Blue;
+                case Feld.Content.BLACK: return Color.Black;
+                case Feld.Content.GOAL: return Color.Magenta;
+                case Feld.Content.BLOCK: return Color.White;
+                default: return Color.Pink;
+            }
         }
 
         private void propagiereRueckOptionen(Feld AktuellesFeld, int Spruenge, Feld AltesFeld, Feld.Content PlayerContent)
         {
-            //Blöcke berücksichtigen
-            //Gegnerische Figuren berücksichtigen 
             if (Spruenge != 0)
             {
                 if (AktuellesFeld.Inhalt != Feld.Content.BLOCK)
                 {
-                    foreach (Feld nachbar in AktuellesFeld.Nachbarn)
+                    foreach (Feld Nachbar in AktuellesFeld.Nachbarn)
                     {
-                        if (nachbar != AltesFeld)                           //Vergleiche in foreach nur zu Beginn ineffiezient
+                        if (Nachbar != AltesFeld)                           //Vergleiche in foreach nur zu Beginn ineffiezient
                         {
-                            propagiereRueckOptionen(nachbar, Spruenge - 1, AktuellesFeld, PlayerContent);
+                            propagiereRueckOptionen(Nachbar, Spruenge - 1, AktuellesFeld, PlayerContent);
                         }
                     }
                 }
@@ -268,11 +259,49 @@ namespace Project_M_CSharp
                 }
                 else if (AktuellesFeld.Inhalt == Feld.Content.GOAL)
                 {
-                    AktuellesFeld.Text = Feld.Content.GOAL.ToString() + "!";
+                    AktuellesFeld.Text = Feld.Content.GOAL.ToString();
                 }
-            }     
+            }
         }
 
+        private void nextPlayer()
+        {
+            if (!(Iter.MoveNext()))
+            {
+                Iter.Reset();
+                Iter.MoveNext();
+            }
+            YourTurn = Iter.Current;
+            lbl_Anleitungen.Text = "Spieler " + YourTurn.PlayerName + 
+                " Sie müssen würfeln.";
+            lbl_Wurfzahl.Text = "";
+            SchonGewuerfelt = false;
+            btn_wuerfeln.Enabled = true;
+            btn_aussetzen.Enabled = false;
+            playerButtonsDisablen();
+            rueckOptionenZuruecksetzen();
+        }
+
+        private void playerButtonsDisablen()
+        {
+            foreach (Feld f in pnl_alleFelder.Controls)
+            {
+                if ((sf = f as Startfeld) is Startfeld)
+                {
+                    if (sf.Inhalt != YourTurn.PlayerFarbe)
+                    {
+                        sf.Enabled = false;
+                        sf.BackColor = Color.DarkGray;
+                    }
+                    else if (!sf.SchonGeruecktWorden)
+                    {
+                        sf.Enabled = true;
+                        sf.BackColor = getColorFromContent(f.Inhalt);
+                    }
+                }
+            }
+        }
+        
         private void rueckOptionenZuruecksetzen()
         {
             foreach (Feld f in pnl_alleFelder.Controls)
@@ -289,41 +318,6 @@ namespace Project_M_CSharp
             }
         }
 
-        private void playerButtonsDisablen()
-        {
-            foreach (Feld f in pnl_alleFelder.Controls)
-            {
-                if ((sf = f as Startfeld) is Startfeld)
-                {
-                        if (YourTurn.spielerFarbe != f.Inhalt)
-                        {
-                            f.Enabled = false;
-                            f.BackColor = Color.DarkGray;
-                        }
-                        else if (!sf.SchonGeruecktWorden)
-                        {
-                            sf.Enabled = true;
-                            sf.BackColor = getColorFromContent(f.Inhalt);
-                        }
-                }
-            }
-        }
-
-        private Color getColorFromContent(Feld.Content c)
-        {
-            switch (c)
-            {
-                case Feld.Content.RED: return Color.Red;
-                case Feld.Content.GREEN: return Color.Green;
-                case Feld.Content.YELLOW: return Color.Yellow;
-                case Feld.Content.BLUE: return Color.Blue;
-                case Feld.Content.BLACK: return Color.Black;
-                case Feld.Content.GOAL: return Color.Magenta;
-                case Feld.Content.BLOCK: return Color.White;
-                default: return Color.Purple;
-            }
-        }
-
         private void ruecken(Feld PropTer, Feld PropDer)
         {
             Feld.Content Ursprungscontent = PropTer.Inhalt;
@@ -332,8 +326,7 @@ namespace Project_M_CSharp
 
             if (PropDer is Startfeld)
             {
-                //startfelder disablen
-                Startfeld sf = (Startfeld)PropDer;
+                sf = (Startfeld)PropDer;
                 sf.Enabled = false;                                      //nachher nochmal enablen
                 sf.SchonGeruecktWorden = true;
             }
@@ -353,7 +346,7 @@ namespace Project_M_CSharp
                     break;
                 case Feld.Content.BLOCK:
                     BlockZuSetzen = true;
-                    lbl_Anleitungen.Text = "Spieler " + YourTurn.name +
+                    lbl_Anleitungen.Text = "Spieler " + YourTurn.PlayerName +
                         " Sie müssen einen Block setzen. Die unterste Reihe ist tabu.";
                     btn_aussetzen.Enabled = false;
                     break;
@@ -361,16 +354,7 @@ namespace Project_M_CSharp
                     gewinnen();
                     break;
             }
-
             rueckOptionenZuruecksetzen();
-        }
-
-        private void gewinnen()
-        {
-            SomeoneWon = true;
-            btn_wuerfeln.Enabled = false;
-            btn_aussetzen.Enabled = false;
-            MessageBox.Show("Spieler " + YourTurn.name + " hat das Spiel gewonnen!");
         }
 
         private void schlagen(Feld.Content GeschlagenerInhalt)
@@ -399,21 +383,43 @@ namespace Project_M_CSharp
             BlockZuSetzen = false;
         }
 
-        private void nextPlayer()
+        private void gewinnen()
         {
-            if (!(Iter.MoveNext()))
-            {
-                Iter.Reset();
-                Iter.MoveNext();
-            }
-            YourTurn = Iter.Current;
-            lbl_Anleitungen.Text = "Spieler " + YourTurn.name + " Sie müssen würfeln.";
-            btn_wuerfeln.Enabled = true;
+            SomeoneWon = true;
+            btn_wuerfeln.Enabled = false;
             btn_aussetzen.Enabled = false;
-            lbl_Wurfzahl.Text = "";
-            SchonGewuerfelt = false;
-            playerButtonsDisablen();
-            rueckOptionenZuruecksetzen();
+            MessageBox.Show("Spieler " + YourTurn.PlayerName + 
+                " hat das Spiel gewonnen!");
+            lbl_Anleitungen.Text = "Spieler " + YourTurn.PlayerName +
+                ": Sie haben gewonnen!";
+        }
+
+        private void btn_beenden_Click(object sender, EventArgs e)
+        {
+            frm_Menue.Show();
+            this.Dispose();
+        }
+
+        private void btn_wuerfeln_Click(object sender, EventArgs e)
+        {
+            Random Zahlenfee = new Random();
+            Wurfzahl = Zahlenfee.Next(1, 7);
+            lbl_Wurfzahl.Text = Wurfzahl.ToString();
+            SchonGewuerfelt = true;
+            btn_aussetzen.Enabled = true;
+            btn_wuerfeln.Enabled = false;
+            lbl_Anleitungen.Text = "Spieler " + YourTurn.PlayerName +
+                " Sie müssen rücken. Klicken Sie dafür eine ihrer Figuren an und anschließend auf ein markiertes Feld.";
+        }
+
+        private void btn_aussetzen_Click(object sender, EventArgs e)
+        {
+            nextPlayer();
+        }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            resetSpielfeld();
         }
 
         private void btn_Click(object sender, EventArgs e)
@@ -430,13 +436,12 @@ namespace Project_M_CSharp
                         if (myField.BackColor == Color.LightGray)
                         {
                             ruecken(myField, Propagierender);
-                            //rueckOptionenZuruecksetzen(); //wird in ruecken gemacht
                             if (!BlockZuSetzen && !SomeoneWon)
                             {
                                 nextPlayer();
                             }
                         }
-                        else if (myField.Inhalt == YourTurn.spielerFarbe)
+                        else if (myField.Inhalt == YourTurn.PlayerFarbe)
                         {
                             Propagierender = myField;
                             propagiereRueckOptionen(myField, Wurfzahl, null, myField.Inhalt);
@@ -449,31 +454,16 @@ namespace Project_M_CSharp
                     }
                 }
             }
-            
+
         }
 
         private void frm_Spielfeld_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frm_Menue.Show();
-        }
-
-        private void btn_aussetzen_Click(object sender, EventArgs e)
-        {
-            nextPlayer();
-        }
-
-        private void btn_reset_Click(object sender, EventArgs e)
-        {
-            resetSpielfeld();
-        }
-
-        private void btn_beenden_Click(object sender, EventArgs e)
-        {
-            frm_Menue.Show();
-            this.Hide();
+            frm_Menue.Dispose();
+            frm_Einstellungen.Dispose();
             this.Dispose();
         }
-
+        
         public void setAttributes()
         {
             btn_0_ziel.setAttributes(Feld.Content.GOAL, 0);

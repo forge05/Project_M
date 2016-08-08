@@ -12,7 +12,7 @@ namespace Project_M_CSharp
 {
     public partial class frm_Menu : Form
     {
-        public frm_Einstellungen frm_Einstellungen;
+        frm_Einstellungen frm_Einstellungen;
         public frm_Menu()
         {
             InitializeComponent();
@@ -21,17 +21,13 @@ namespace Project_M_CSharp
 
         private void btn_beenden_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Dispose();
         }
 
         private void btn_neues_Spiel_Click(object sender, EventArgs e)
         {
-            //frm_Spielfeld Spiel = new frm_Spielfeld(this, frm_Einstellungen);
-            //frm_Einstellungen = new frm_Einstellungen(this);
             frm_Einstellungen.Show();
             this.Hide();
-            //Spiel.Show();
-            //this.Hide();
         }
     }
 }

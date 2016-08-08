@@ -8,15 +8,15 @@ namespace Project_M_CSharp
         public Content Inhalt;
         public int EntfernungZumZiel;
         
-        public void setAttributes(Content c, int distanz)
+        public void setAttributes(Content Inhalt, int Distanz)
         {
-            Inhalt = c;
-            EntfernungZumZiel = distanz;
+            this.Inhalt = Inhalt;
+            EntfernungZumZiel = Distanz;
         }
 
-        public void setNachbar (params Feld[] ButtonList)
+        public void setNachbar (params Feld[] Felder)
         {
-            Nachbarn = ButtonList;
+            Nachbarn = Felder;
         }
 
         public enum Content{ 

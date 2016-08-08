@@ -10,8 +10,8 @@ namespace Project_M_CSharp
     {
         public CPU(string CPU_Name, Feld.Content CPU_Farbe, params Startfeld[] startfelder_Array) : base(startfelder_Array)
         {
-            name = CPU_Name;
-            spielerFarbe = CPU_Farbe;
+            PlayerName = CPU_Name;
+            PlayerFarbe = CPU_Farbe;
         }
     }
 }
