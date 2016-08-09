@@ -14,7 +14,7 @@ namespace Project_M_CSharp
             EntfernungZumZiel = Distanz;
         }
 
-        public void setNachbar (params Feld[] Felder)
+        public void setNeighbors (params Feld[] Felder)
         {
             Nachbarn = Felder;
         }

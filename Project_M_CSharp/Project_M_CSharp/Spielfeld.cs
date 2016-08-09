@@ -163,11 +163,6 @@ namespace Project_M_CSharp
                 }
                 AllePlayer.Add(Player3); //Player 3 wird der Playerliste hinzugefügt
                 lbl_Player3.Text = Playername3;
-                //Player3 einfärben
-                foreach (Startfeld sf in Player3.StartfeldArray)
-                {
-                    sf.BackColor = getColorFromContent(Player3.PlayerFarbe);
-                }
                 if (PlayerAnzahl > 3)
                 {
                     if (CPU4)
@@ -180,11 +175,6 @@ namespace Project_M_CSharp
                     }
                     AllePlayer.Add(Player4); //Player 4 wird der Playerliste hinzugefügt
                     lbl_Player4.Text = Playername4;
-                    //Player 4 einfärben
-                    foreach (Startfeld sf in Player4.StartfeldArray)
-                    {
-                        sf.BackColor = getColorFromContent(Player4.PlayerFarbe);
-                    }
                 }
             }
         }
@@ -219,14 +209,22 @@ namespace Project_M_CSharp
         {
             switch (c)
             {
-                case Feld.Content.RED: return Color.Red;
-                case Feld.Content.GREEN: return Color.Green;
-                case Feld.Content.YELLOW: return Color.Yellow;
-                case Feld.Content.BLUE: return Color.Blue;
-                case Feld.Content.BLACK: return Color.Black;
-                case Feld.Content.GOAL: return Color.Magenta;
-                case Feld.Content.BLOCK: return Color.White;
-                default: return Color.Pink;
+                case Feld.Content.RED:
+                    return Color.Red;
+                case Feld.Content.GREEN:
+                    return Color.Green;
+                case Feld.Content.YELLOW:
+                    return Color.Yellow;
+                case Feld.Content.BLUE:
+                    return Color.Blue;
+                case Feld.Content.BLACK:
+                    return Color.Black;
+                case Feld.Content.GOAL:
+                    return Color.Magenta;
+                case Feld.Content.BLOCK:
+                    return Color.White;
+                default:
+                    return Color.Pink;
             }
         }
 
@@ -260,6 +258,7 @@ namespace Project_M_CSharp
                 else if (AktuellesFeld.Inhalt == Feld.Content.GOAL)
                 {
                     AktuellesFeld.Text = Feld.Content.GOAL.ToString();
+                    AktuellesFeld.ForeColor = getColorFromContent(AktuellesFeld.Inhalt);
                 }
             }
         }
@@ -309,11 +308,8 @@ namespace Project_M_CSharp
                 if (!(f is Startfeld))
                 {
                     f.BackColor = getColorFromContent(f.Inhalt);
-                    if (f.Inhalt != Feld.Content.GOAL)
-                    {
-                        f.Text = "";
-                        f.ForeColor = Color.Black;
-                    }
+                    f.Text = "";
+                    f.ForeColor = Color.Black;
                 }
             }
         }
@@ -333,7 +329,7 @@ namespace Project_M_CSharp
             else
             {
                 PropDer.Inhalt = Feld.Content.BLACK;
-                PropDer.BackColor = Color.Black;
+                PropDer.BackColor = getColorFromContent(PropDer.Inhalt);
             }
 
             switch (Ursprungscontent)
@@ -379,7 +375,7 @@ namespace Project_M_CSharp
         private void blockieren(Feld WirdBlock)
         {
             WirdBlock.Inhalt = Feld.Content.BLOCK;
-            WirdBlock.BackColor = Color.White;
+            WirdBlock.BackColor = getColorFromContent(WirdBlock.Inhalt);
             BlockZuSetzen = false;
         }
 
@@ -406,8 +402,8 @@ namespace Project_M_CSharp
             Wurfzahl = Zahlenfee.Next(1, 7);
             lbl_Wurfzahl.Text = Wurfzahl.ToString();
             SchonGewuerfelt = true;
-            btn_aussetzen.Enabled = true;
             btn_wuerfeln.Enabled = false;
+            btn_aussetzen.Enabled = true;
             lbl_Anleitungen.Text = "Spieler " + YourTurn.PlayerName +
                 " Sie müssen rücken. Klicken Sie dafür eine ihrer Figuren an und anschließend auf ein markiertes Feld.";
         }
@@ -454,7 +450,6 @@ namespace Project_M_CSharp
                     }
                 }
             }
-
         }
 
         private void frm_Spielfeld_FormClosing(object sender, FormClosingEventArgs e)
@@ -602,138 +597,138 @@ namespace Project_M_CSharp
 
         public void setNeighbors()
         {
-            btn_0_ziel.setNachbar(btn_1);
-            btn_1.setNachbar(btn_0_ziel, btn_2_1, btn_2_2);
-            btn_2_1.setNachbar(btn_1, btn_3_1);
-            btn_2_2.setNachbar(btn_1, btn_3_2);
-            btn_3_1.setNachbar(btn_2_1, btn_4_1);
-            btn_3_2.setNachbar(btn_2_2, btn_4_2);
-            btn_4_1.setNachbar(btn_3_1, btn_5_1);
-            btn_4_2.setNachbar(btn_3_2, btn_5_2);
-            btn_5_1.setNachbar(btn_4_1, btn_6_1);
-            btn_5_2.setNachbar(btn_4_2, btn_6_2);
-            btn_6_1.setNachbar(btn_5_1, btn_7_1);
-            btn_6_2.setNachbar(btn_5_2, btn_7_2);
-            btn_7_1.setNachbar(btn_6_1, btn_8_1);
-            btn_7_2.setNachbar(btn_6_2, btn_8_2);
-            btn_8_1.setNachbar(btn_7_1, btn_9_1);
-            btn_8_2.setNachbar(btn_7_2, btn_9_2);
-            btn_9_1.setNachbar(btn_8_1, btn_10_1);
-            btn_9_2.setNachbar(btn_8_2, btn_10_2);
-            btn_10_1.setNachbar(btn_9_1, btn_11_1);
-            btn_10_2.setNachbar(btn_9_2, btn_11_2);
-            btn_11_1.setNachbar(btn_10_1, btn_12_1);
-            btn_11_2.setNachbar(btn_10_2, btn_12_2);
-            btn_12_1.setNachbar(btn_11_1, btn_13_1);
-            btn_12_2.setNachbar(btn_11_2, btn_13_2);
-            btn_13_1.setNachbar(btn_12_1, btn_14_1);
-            btn_13_2.setNachbar(btn_12_2, btn_14_2);
-            btn_14_1.setNachbar(btn_13_1, btn_15_1);
-            btn_14_2.setNachbar(btn_13_2, btn_15_2);
-            btn_15_1.setNachbar(btn_14_1, btn_16_1);
-            btn_15_2.setNachbar(btn_14_2, btn_16_2);
-            btn_16_1.setNachbar(btn_15_1, btn_17_1);
-            btn_16_2.setNachbar(btn_15_2, btn_17_2);
-            btn_17_1.setNachbar(btn_16_1, btn_18_1);
-            btn_17_2.setNachbar(btn_16_2, btn_18_2);
-            btn_18_1.setNachbar(btn_17_1, btn_19);
-            btn_18_2.setNachbar(btn_17_2, btn_19);
-            btn_19.setNachbar(btn_18_1, btn_18_2, btn_20);
-            btn_20.setNachbar(btn_19, btn_21);
-            btn_21.setNachbar(btn_20, btn_22_1, btn_22_2);
-            btn_22_1.setNachbar(btn_21, btn_23_1);
-            btn_22_2.setNachbar(btn_21, btn_23_2);
-            btn_23_1.setNachbar(btn_22_1, btn_24_1);
-            btn_23_2.setNachbar(btn_22_2, btn_24_2);
-            btn_24_1.setNachbar(btn_23_1, btn_25_1);
-            btn_24_2.setNachbar(btn_23_2, btn_25_2);
-            btn_25_1.setNachbar(btn_24_1, btn_26_1, btn_26_2);
-            btn_25_2.setNachbar(btn_24_2, btn_26_3, btn_26_4);
-            btn_26_1.setNachbar(btn_25_1, btn_27_1);
-            btn_26_2.setNachbar(btn_25_1, btn_27_2);
-            btn_26_3.setNachbar(btn_25_2, btn_27_2);
-            btn_26_4.setNachbar(btn_25_2, btn_27_3);
-            btn_27_1.setNachbar(btn_26_1, btn_28_1);
-            btn_27_2.setNachbar(btn_26_2, btn_26_3);
-            btn_27_3.setNachbar(btn_26_4, btn_28_2);
-            btn_28_1.setNachbar(btn_27_1, btn_29_1);
-            btn_28_2.setNachbar(btn_27_3, btn_29_2);
-            btn_29_1.setNachbar(btn_28_1, btn_30_1, btn_30_2);
-            btn_29_2.setNachbar(btn_28_2, btn_30_3, btn_30_4);
-            btn_30_1.setNachbar(btn_29_1, btn_31_1);
-            btn_30_2.setNachbar(btn_29_1, btn_31_2);
-            btn_30_3.setNachbar(btn_29_2, btn_31_3);
-            btn_30_4.setNachbar(btn_29_2, btn_31_4);
-            btn_31_1.setNachbar(btn_30_1, btn_32_1);
-            btn_31_2.setNachbar(btn_30_2, btn_32_2, btn_32_3);
-            btn_31_3.setNachbar(btn_30_3, btn_32_4, btn_32_5);
-            btn_31_4.setNachbar(btn_30_4, btn_32_6);
-            btn_32_1.setNachbar(btn_31_1, btn_33_1);
-            btn_32_2.setNachbar(btn_31_2, btn_33_2);
-            btn_32_3.setNachbar(btn_31_2, btn_33_3);
-            btn_32_4.setNachbar(btn_31_3, btn_33_3);
-            btn_32_5.setNachbar(btn_31_3, btn_33_4);
-            btn_32_6.setNachbar(btn_31_4, btn_33_5);
-            btn_33_1.setNachbar(btn_32_1, btn_34_1, btn_34_2);
-            btn_33_2.setNachbar(btn_32_2, btn_34_3, btn_34_4);
-            btn_33_3.setNachbar(btn_32_3, btn_32_4);
-            btn_33_4.setNachbar(btn_32_5, btn_34_5, btn_34_6);
-            btn_33_5.setNachbar(btn_32_6, btn_34_7, btn_34_8);
-            btn_34_1.setNachbar(btn_33_1, btn_35_1);
-            btn_34_2.setNachbar(btn_33_1, btn_35_2);
-            btn_34_3.setNachbar(btn_33_2, btn_35_2);
-            btn_34_4.setNachbar(btn_33_2, btn_35_3);
-            btn_34_5.setNachbar(btn_33_4, btn_35_3);
-            btn_34_6.setNachbar(btn_33_4, btn_35_4);
-            btn_34_7.setNachbar(btn_33_5, btn_35_4);
-            btn_34_8.setNachbar(btn_33_5, btn_35_5);
-            btn_35_1.setNachbar(btn_34_1, btn_36_1);
-            btn_35_2.setNachbar(btn_34_2, btn_34_3, btn_36_2);
-            btn_35_3.setNachbar(btn_34_4, btn_34_5, btn_36_3);
-            btn_35_4.setNachbar(btn_34_6, btn_34_7, btn_36_4);
-            btn_35_5.setNachbar(btn_34_8, btn_36_5);
-            btn_36_1.setNachbar(btn_35_1, btn_37_1);
-            btn_36_2.setNachbar(btn_35_2, btn_37_2);
-            btn_36_3.setNachbar(btn_35_3, btn_37_3);
-            btn_36_4.setNachbar(btn_35_4, btn_37_4);
-            btn_36_5.setNachbar(btn_35_5, btn_37_5);
-            btn_37_1.setNachbar(btn_36_1, btn_38_1);
-            btn_37_2.setNachbar(btn_36_2, btn_38_2, btn_38_3);
-            btn_37_3.setNachbar(btn_36_3, btn_38_4, btn_38_5);
-            btn_37_4.setNachbar(btn_36_4, btn_38_6, btn_38_7);
-            btn_37_5.setNachbar(btn_36_5, btn_38_8);
-            btn_38_1.setNachbar(btn_37_1, btn_39_1);
-            btn_38_2.setNachbar(btn_37_2, btn_39_1);
-            btn_38_3.setNachbar(btn_37_2, btn_39_2);
-            btn_38_4.setNachbar(btn_37_3, btn_39_2);
-            btn_38_5.setNachbar(btn_37_3, btn_39_3);
-            btn_38_6.setNachbar(btn_37_4, btn_39_3);
-            btn_38_7.setNachbar(btn_37_4, btn_39_4);
-            btn_38_8.setNachbar(btn_37_5, btn_39_4);
-            btn_39_1.setNachbar(btn_38_1, btn_38_2); //wir lassen die 39er-Felder bewusst 
-            btn_39_2.setNachbar(btn_38_3, btn_38_4); //nicht ihre Startfeldnachbarn
-            btn_39_3.setNachbar(btn_38_5, btn_38_6); //kennen, weil man nicht zurück in die
-            btn_39_4.setNachbar(btn_38_7, btn_38_8); //Startfelder rücken darf
-            btn_red_40_1.setNachbar(btn_39_1);
-            btn_red_40_2.setNachbar(btn_39_1);
-            btn_red_40_3.setNachbar(btn_39_1);
-            btn_red_40_4.setNachbar(btn_39_1);
-            btn_red_40_5.setNachbar(btn_39_1);
-            btn_green_40_1.setNachbar(btn_39_2);
-            btn_green_40_2.setNachbar(btn_39_2);
-            btn_green_40_3.setNachbar(btn_39_2);
-            btn_green_40_4.setNachbar(btn_39_2);
-            btn_green_40_5.setNachbar(btn_39_2);
-            btn_yellow_40_1.setNachbar(btn_39_3);
-            btn_yellow_40_2.setNachbar(btn_39_3);
-            btn_yellow_40_3.setNachbar(btn_39_3);
-            btn_yellow_40_4.setNachbar(btn_39_3);
-            btn_yellow_40_5.setNachbar(btn_39_3);
-            btn_blue_40_1.setNachbar(btn_39_4);
-            btn_blue_40_2.setNachbar(btn_39_4);
-            btn_blue_40_3.setNachbar(btn_39_4);
-            btn_blue_40_4.setNachbar(btn_39_4);
-            btn_blue_40_5.setNachbar(btn_39_4);
+            btn_0_ziel.setNeighbors(btn_1);
+            btn_1.setNeighbors(btn_0_ziel, btn_2_1, btn_2_2);
+            btn_2_1.setNeighbors(btn_1, btn_3_1);
+            btn_2_2.setNeighbors(btn_1, btn_3_2);
+            btn_3_1.setNeighbors(btn_2_1, btn_4_1);
+            btn_3_2.setNeighbors(btn_2_2, btn_4_2);
+            btn_4_1.setNeighbors(btn_3_1, btn_5_1);
+            btn_4_2.setNeighbors(btn_3_2, btn_5_2);
+            btn_5_1.setNeighbors(btn_4_1, btn_6_1);
+            btn_5_2.setNeighbors(btn_4_2, btn_6_2);
+            btn_6_1.setNeighbors(btn_5_1, btn_7_1);
+            btn_6_2.setNeighbors(btn_5_2, btn_7_2);
+            btn_7_1.setNeighbors(btn_6_1, btn_8_1);
+            btn_7_2.setNeighbors(btn_6_2, btn_8_2);
+            btn_8_1.setNeighbors(btn_7_1, btn_9_1);
+            btn_8_2.setNeighbors(btn_7_2, btn_9_2);
+            btn_9_1.setNeighbors(btn_8_1, btn_10_1);
+            btn_9_2.setNeighbors(btn_8_2, btn_10_2);
+            btn_10_1.setNeighbors(btn_9_1, btn_11_1);
+            btn_10_2.setNeighbors(btn_9_2, btn_11_2);
+            btn_11_1.setNeighbors(btn_10_1, btn_12_1);
+            btn_11_2.setNeighbors(btn_10_2, btn_12_2);
+            btn_12_1.setNeighbors(btn_11_1, btn_13_1);
+            btn_12_2.setNeighbors(btn_11_2, btn_13_2);
+            btn_13_1.setNeighbors(btn_12_1, btn_14_1);
+            btn_13_2.setNeighbors(btn_12_2, btn_14_2);
+            btn_14_1.setNeighbors(btn_13_1, btn_15_1);
+            btn_14_2.setNeighbors(btn_13_2, btn_15_2);
+            btn_15_1.setNeighbors(btn_14_1, btn_16_1);
+            btn_15_2.setNeighbors(btn_14_2, btn_16_2);
+            btn_16_1.setNeighbors(btn_15_1, btn_17_1);
+            btn_16_2.setNeighbors(btn_15_2, btn_17_2);
+            btn_17_1.setNeighbors(btn_16_1, btn_18_1);
+            btn_17_2.setNeighbors(btn_16_2, btn_18_2);
+            btn_18_1.setNeighbors(btn_17_1, btn_19);
+            btn_18_2.setNeighbors(btn_17_2, btn_19);
+            btn_19.setNeighbors(btn_18_1, btn_18_2, btn_20);
+            btn_20.setNeighbors(btn_19, btn_21);
+            btn_21.setNeighbors(btn_20, btn_22_1, btn_22_2);
+            btn_22_1.setNeighbors(btn_21, btn_23_1);
+            btn_22_2.setNeighbors(btn_21, btn_23_2);
+            btn_23_1.setNeighbors(btn_22_1, btn_24_1);
+            btn_23_2.setNeighbors(btn_22_2, btn_24_2);
+            btn_24_1.setNeighbors(btn_23_1, btn_25_1);
+            btn_24_2.setNeighbors(btn_23_2, btn_25_2);
+            btn_25_1.setNeighbors(btn_24_1, btn_26_1, btn_26_2);
+            btn_25_2.setNeighbors(btn_24_2, btn_26_3, btn_26_4);
+            btn_26_1.setNeighbors(btn_25_1, btn_27_1);
+            btn_26_2.setNeighbors(btn_25_1, btn_27_2);
+            btn_26_3.setNeighbors(btn_25_2, btn_27_2);
+            btn_26_4.setNeighbors(btn_25_2, btn_27_3);
+            btn_27_1.setNeighbors(btn_26_1, btn_28_1);
+            btn_27_2.setNeighbors(btn_26_2, btn_26_3);
+            btn_27_3.setNeighbors(btn_26_4, btn_28_2);
+            btn_28_1.setNeighbors(btn_27_1, btn_29_1);
+            btn_28_2.setNeighbors(btn_27_3, btn_29_2);
+            btn_29_1.setNeighbors(btn_28_1, btn_30_1, btn_30_2);
+            btn_29_2.setNeighbors(btn_28_2, btn_30_3, btn_30_4);
+            btn_30_1.setNeighbors(btn_29_1, btn_31_1);
+            btn_30_2.setNeighbors(btn_29_1, btn_31_2);
+            btn_30_3.setNeighbors(btn_29_2, btn_31_3);
+            btn_30_4.setNeighbors(btn_29_2, btn_31_4);
+            btn_31_1.setNeighbors(btn_30_1, btn_32_1);
+            btn_31_2.setNeighbors(btn_30_2, btn_32_2, btn_32_3);
+            btn_31_3.setNeighbors(btn_30_3, btn_32_4, btn_32_5);
+            btn_31_4.setNeighbors(btn_30_4, btn_32_6);
+            btn_32_1.setNeighbors(btn_31_1, btn_33_1);
+            btn_32_2.setNeighbors(btn_31_2, btn_33_2);
+            btn_32_3.setNeighbors(btn_31_2, btn_33_3);
+            btn_32_4.setNeighbors(btn_31_3, btn_33_3);
+            btn_32_5.setNeighbors(btn_31_3, btn_33_4);
+            btn_32_6.setNeighbors(btn_31_4, btn_33_5);
+            btn_33_1.setNeighbors(btn_32_1, btn_34_1, btn_34_2);
+            btn_33_2.setNeighbors(btn_32_2, btn_34_3, btn_34_4);
+            btn_33_3.setNeighbors(btn_32_3, btn_32_4);
+            btn_33_4.setNeighbors(btn_32_5, btn_34_5, btn_34_6);
+            btn_33_5.setNeighbors(btn_32_6, btn_34_7, btn_34_8);
+            btn_34_1.setNeighbors(btn_33_1, btn_35_1);
+            btn_34_2.setNeighbors(btn_33_1, btn_35_2);
+            btn_34_3.setNeighbors(btn_33_2, btn_35_2);
+            btn_34_4.setNeighbors(btn_33_2, btn_35_3);
+            btn_34_5.setNeighbors(btn_33_4, btn_35_3);
+            btn_34_6.setNeighbors(btn_33_4, btn_35_4);
+            btn_34_7.setNeighbors(btn_33_5, btn_35_4);
+            btn_34_8.setNeighbors(btn_33_5, btn_35_5);
+            btn_35_1.setNeighbors(btn_34_1, btn_36_1);
+            btn_35_2.setNeighbors(btn_34_2, btn_34_3, btn_36_2);
+            btn_35_3.setNeighbors(btn_34_4, btn_34_5, btn_36_3);
+            btn_35_4.setNeighbors(btn_34_6, btn_34_7, btn_36_4);
+            btn_35_5.setNeighbors(btn_34_8, btn_36_5);
+            btn_36_1.setNeighbors(btn_35_1, btn_37_1);
+            btn_36_2.setNeighbors(btn_35_2, btn_37_2);
+            btn_36_3.setNeighbors(btn_35_3, btn_37_3);
+            btn_36_4.setNeighbors(btn_35_4, btn_37_4);
+            btn_36_5.setNeighbors(btn_35_5, btn_37_5);
+            btn_37_1.setNeighbors(btn_36_1, btn_38_1);
+            btn_37_2.setNeighbors(btn_36_2, btn_38_2, btn_38_3);
+            btn_37_3.setNeighbors(btn_36_3, btn_38_4, btn_38_5);
+            btn_37_4.setNeighbors(btn_36_4, btn_38_6, btn_38_7);
+            btn_37_5.setNeighbors(btn_36_5, btn_38_8);
+            btn_38_1.setNeighbors(btn_37_1, btn_39_1);
+            btn_38_2.setNeighbors(btn_37_2, btn_39_1);
+            btn_38_3.setNeighbors(btn_37_2, btn_39_2);
+            btn_38_4.setNeighbors(btn_37_3, btn_39_2);
+            btn_38_5.setNeighbors(btn_37_3, btn_39_3);
+            btn_38_6.setNeighbors(btn_37_4, btn_39_3);
+            btn_38_7.setNeighbors(btn_37_4, btn_39_4);
+            btn_38_8.setNeighbors(btn_37_5, btn_39_4);
+            btn_39_1.setNeighbors(btn_38_1, btn_38_2); //wir lassen die 39er-Felder bewusst 
+            btn_39_2.setNeighbors(btn_38_3, btn_38_4); //nicht ihre Startfeldnachbarn
+            btn_39_3.setNeighbors(btn_38_5, btn_38_6); //kennen, weil man nicht zurück in die
+            btn_39_4.setNeighbors(btn_38_7, btn_38_8); //Startfelder rücken darf
+            btn_red_40_1.setNeighbors(btn_39_1);
+            btn_red_40_2.setNeighbors(btn_39_1);
+            btn_red_40_3.setNeighbors(btn_39_1);
+            btn_red_40_4.setNeighbors(btn_39_1);
+            btn_red_40_5.setNeighbors(btn_39_1);
+            btn_green_40_1.setNeighbors(btn_39_2);
+            btn_green_40_2.setNeighbors(btn_39_2);
+            btn_green_40_3.setNeighbors(btn_39_2);
+            btn_green_40_4.setNeighbors(btn_39_2);
+            btn_green_40_5.setNeighbors(btn_39_2);
+            btn_yellow_40_1.setNeighbors(btn_39_3);
+            btn_yellow_40_2.setNeighbors(btn_39_3);
+            btn_yellow_40_3.setNeighbors(btn_39_3);
+            btn_yellow_40_4.setNeighbors(btn_39_3);
+            btn_yellow_40_5.setNeighbors(btn_39_3);
+            btn_blue_40_1.setNeighbors(btn_39_4);
+            btn_blue_40_2.setNeighbors(btn_39_4);
+            btn_blue_40_3.setNeighbors(btn_39_4);
+            btn_blue_40_4.setNeighbors(btn_39_4);
+            btn_blue_40_5.setNeighbors(btn_39_4);
         }
     }
 }
